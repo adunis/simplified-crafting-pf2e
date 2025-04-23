@@ -1,0 +1,43 @@
+{
+    "id": "simplified-crafting-pf2e",
+    "title": "Simplified Crafting PF2e",
+    "description": "Replaces the standard crafting logic with a simplified system.",
+    "version": "1.0.0",
+    "authors": [
+      {
+        "name": "Aleksandar Petrovic",
+        "email": "",
+        "url": ""
+      }
+    ],
+    "compatibility": {
+      "minimum": "12",
+      "verified": "12"
+    },
+    "relationships": {
+      "systems": [
+        {
+          "id": "pf2e",
+          "type": "system",
+          "compatibility": {
+            "minimum": "5.10.0"
+          }
+        }
+      ],
+      "requires": [
+        {
+          "id": "lib-wrapper",
+          "type": "module",
+          "compatibility": {}
+        }
+      ]
+    },
+    "scripts": [
+      "main.js"
+    ],
+    "url": "Your Module URL (Optional, e.g., GitHub)",
+    "manifest": "Your Manifest URL (Optional, for updates)",
+    "download": "Your Download URL (Optional, for updates)",
+    "license": "LICENSE.txt (Optional)",
+    "readme": "README.md (Optional)"
+  }
