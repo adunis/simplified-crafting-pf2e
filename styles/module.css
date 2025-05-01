@@ -1,0 +1,8 @@
+/* In your module's CSS file */
+.dialog .dialog-buttons button.custom-disabled {
+    opacity: 0.5; /* Make it look faded */
+    cursor: not-allowed; /* Change the mouse cursor */
+    /* You could add more styles like grayscale */
+    /* filter: grayscale(80%); */
+    pointer-events: none; /* Prevent clicking even if visually enabled somehow */
+  }
