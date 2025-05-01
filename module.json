@@ -31,7 +31,10 @@
           "compatibility": {}
         }
       ]
-    },
+    },  
+    "styles": [
+      "/styles/module.css" 
+    ],
     "scripts": [
       "/scripts/module.js"
     ],
