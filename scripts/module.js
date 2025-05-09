@@ -3155,11 +3155,12 @@ class SimplifiedCraftingModule {
     if (craftTab.length > 0) {
       try {
         const allActorFeats = actor.itemTypes.feat;
-
-        const relevantFeats = allActorFeats.filter((feat) =>
-          this.CRAFTING_FEAT_SLUGS.has(feat.slug)
+        
+        const relevantFeats = allActorFeats.filter((feat, index) =>
+          // only take the _first_ matching feat to ensure uniqueness
+          this.CRAFTING_FEAT_SLUGS.has(feat.slug) && allActorFeats.indexOf(feat) === index
         );
-
+          
         relevantFeats.sort((a, b) => a.name.localeCompare(b.name));
 
         let featListHtml = "";
