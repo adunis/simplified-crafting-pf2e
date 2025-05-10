@@ -28,118 +28,6 @@ class SimplifiedCraftingModule {
       CRIT_FAIL_ORIGINAL_DATA_FLAG: "criticalFailureOriginalData",
     };
 
-    this.DECEPTIVE_CRIT_FAIL_ITEMS = {
-        potion: [
-            { name: "Potion of Healing (Minor)", icon: "systems/pf2e/icons/consumables/potions/potion-of-healing-minor.webp", uuid: "Compendium.pf2e.consumables-srd.Item.xPgeG1Jb6tWOx15p" },
-            { name: "Potion of Healing (Lesser)", icon: "systems/pf2e/icons/consumables/potions/potion-of-healing-lesser.webp", uuid: "Compendium.pf2e.consumables-srd.Item.Dil49nL4hI2gUfTx" },
-            { name: "Potion of Healing (Moderate)", icon: "systems/pf2e/icons/consumables/potions/potion-of-healing-moderate.webp", uuid: "Compendium.pf2e.consumables-srd.Item.EHP9kH4f1s3Q6bHw" },
-            { name: "Elixir of Life (Minor)", icon: "systems/pf2e/icons/consumables/elixirs/elixir-of-life-minor.webp", uuid: "Compendium.pf2e.consumables-srd.Item.UqYjQzD4xH1aL2Jp" },
-            { name: "Elixir of Life (Lesser)", icon: "systems/pf2e/icons/consumables/elixirs/elixir-of-life-lesser.webp", uuid: "Compendium.pf2e.consumables-srd.Item.vrYhQxLq3tY1t19b" },
-            { name: "Elixir of Life (Moderate)", icon: "systems/pf2e/icons/consumables/elixirs/elixir-of-life-moderate.webp", uuid: "Compendium.pf2e.consumables-srd.Item.yZ4f4N5P3J2a1t7p" },
-            { name: "Potion of Quickness (Minor)", icon: "systems/pf2e/icons/consumables/potions/potion-of-quickness.webp", uuid: "Compendium.pf2e.consumables-srd.Item.vWlV24Y4rG2j3E4P" },
-            { name: "Potion of Flying (Minor)", icon: "systems/pf2e/icons/consumables/potions/potion-of-flying.webp", uuid: "Compendium.pf2e.consumables-srd.Item.P614c1k6o3a0B4gq" },
-            { name: "Potion of Invisibility (Minor)", icon: "systems/pf2e/icons/consumables/potions/potion-of-invisibility.webp", uuid: "Compendium.pf2e.consumables-srd.Item.jV2q3J1a4f7g2c9z" },
-            { name: "Potion of Sneaking (Minor)", icon: "systems/pf2e/icons/consumables/potions/potion-of-sneaking.webp", uuid: "Compendium.pf2e.consumables-srd.Item.zX4x8F8u5v7w6y1e" },
-        ],
-        scroll: [
-            { name: "Scroll of Magic Missile (1st Level)", icon: "systems/pf2e/icons/consumables/scrolls/scroll.webp", uuid: "Compendium.pf2e.consumables-srd.Item.qQ4y8K2B9z4L1m3j" },
-            { name: "Scroll of Fear (1st Level)", icon: "systems/pf2e/icons/consumables/scrolls/scroll.webp", uuid: "Compendium.pf2e.consumables-srd.Item.zC0L2K5d3r2a6m1u" },
-            { name: "Scroll of Heal (1st Level)", icon: "systems/pf2e/icons/consumables/scrolls/scroll.webp", uuid: "Compendium.pf2e.consumables-srd.Item.OjP7oG5J1w4d1K3k" },
-            { name: "Scroll of Fireball (3rd Level)", icon: "systems/pf2e/icons/consumables/scrolls/scroll.webp", uuid: "Compendium.pf2e.consumables-srd.Item.6t6g2L7a8v0u6h5z" },
-            { name: "Scroll of Fly (3rd Level)", icon: "systems/pf2e/icons/consumables/scrolls/scroll.webp", uuid: "Compendium.pf2e.consumables-srd.Item.xY7z9C2e0j1k8t4i" },
-            { name: "Scroll of Haste (3rd Level)", icon: "systems/pf2e/icons/consumables/scrolls/scroll.webp", uuid: "Compendium.pf2e.consumables-srd.Item.hF6x1P2b4r5t3m7y" },
-            { name: "Scroll of Invisibility (2nd Level)", icon: "systems/pf2e/icons/consumables/scrolls/scroll.webp", uuid: "Compendium.pf2e.consumables-srd.Item.nZ4z9a5v0p3f6r8i" },
-            { name: "Scroll of Levitate (2nd Level)", icon: "systems/pf2e/icons/consumables/scrolls/scroll.webp", uuid: "Compendium.pf2e.consumables-srd.Item.uS2b3D1q5e0x9m7w" },
-            { name: "Scroll of Web (2nd Level)", icon: "systems/pf2e/icons/consumables/scrolls/scroll.webp", uuid: "Compendium.pf2e.consumables-srd.Item.vG8c4B6d9x1z3r5e" },
-            { name: "Scroll of Sleep (1st Level)", icon: "systems/pf2e/icons/consumables/scrolls/scroll.webp", uuid: "Compendium.pf2e.consumables-srd.Item.aB1d3E5f7h9j0k2l" },
-        ],
-        wand: [
-            { name: "Wand of Magic Missiles (1st)", icon: "systems/pf2e/icons/equipment/wondrous-items/other-wondrous-items/wand-of-magic-missile.webp", uuid: "Compendium.pf2e.equipment-srd.Item.t6K01J4K3x5y1G7g" },
-            { name: "Wand of Fear (1st)", icon: "systems/pf2e/icons/equipment/wondrous-items/other-wondrous-items/wand-cackling-witch.webp", uuid: "Compendium.pf2e.equipment-srd.Item.8q9r6t5y1a0s3d2f" },
-            { name: "Wand of Healing (1st)", icon: "systems/pf2e/icons/equipment/wondrous-items/other-wondrous-items/wand-of-healing.webp", uuid: "Compendium.pf2e.equipment-srd.Item.iY3z5u7x9v1b0n2m" },
-            { name: "Wand of Fireball (3rd)", icon: "systems/pf2e/icons/equipment/wondrous-items/other-wondrous-items/wand-of-manifold-missiles.webp", uuid: "Compendium.pf2e.equipment-srd.Item.rA2w4e6t8y0u1i3o" }, // Placeholder icon
-            { name: "Wand of Fly (3rd)", icon: "systems/pf2e/icons/equipment/wondrous-items/other-wondrous-items/wand-of-manifold-missiles.webp", uuid: "Compendium.pf2e.equipment-srd.Item.bP0c2d4f6h8j1k3l" }, // Placeholder icon
-            { name: "Wand of Haste (3rd)", icon: "systems/pf2e/icons/equipment/wondrous-items/other-wondrous-items/wand-of-manifold-missiles.webp", uuid: "Compendium.pf2e.equipment-srd.Item.nV9m7b5v3x1z0a2s" }, // Placeholder icon
-            { name: "Wand of Invisibility (2nd)", icon: "systems/pf2e/icons/equipment/wondrous-items/other-wondrous-items/wand-of-manifold-missiles.webp", uuid: "Compendium.pf2e.equipment-srd.Item.eZ1x3c5v7b9n0m2j" }, // Placeholder icon
-            { name: "Wand of Levitate (2nd)", icon: "systems/pf2e/icons/equipment/wondrous-items/other-wondrous-items/wand-of-manifold-missiles.webp", uuid: "Compendium.pf2e.equipment-srd.Item.aD0s2f4g6h8j1k3l" }, // Placeholder icon
-            { name: "Wand of Web (2nd)", icon: "systems/pf2e/icons/equipment/wondrous-items/other-wondrous-items/wand-of-manifold-missiles.webp", uuid: "Compendium.pf2e.equipment-srd.Item.hQ3w5e7r9t0y1u2i" }, // Placeholder icon
-            { name: "Wand of Sleep (1st)", icon: "systems/pf2e/icons/equipment/wondrous-items/other-wondrous-items/wand-of-manifold-missiles.webp", uuid: "Compendium.pf2e.equipment-srd.Item.jL6k8h0g2f4d1s3a" }, // Placeholder icon
-        ],
-        armor: [
-            { name: "Studded Leather Armor", icon: "systems/pf2e/icons/armor/studded-leather-armor.webp", uuid: "Compendium.pf2e.armor-srd.Item.WdE0t0B9F9B5O5n2" },
-            { name: "Scale Mail", icon: "systems/pf2e/icons/armor/scale-mail.webp", uuid: "Compendium.pf2e.armor-srd.Item.g8bY5z9c4c4k3x0t" },
-            { name: "Chain Mail", icon: "systems/pf2e/icons/armor/chain-mail.webp", uuid: "Compendium.pf2e.armor-srd.Item.gE5Yc2r0G9x3b0qF" },
-            { name: "Half Plate", icon: "systems/pf2e/icons/armor/half-plate.webp", uuid: "Compendium.pf2e.armor-srd.Item.vC0b6M5B8n3b2p2u" },
-            { name: "Full Plate", icon: "systems/pf2e/icons/armor/full-plate.webp", uuid: "Compendium.pf2e.armor-srd.Item.4oB2t0U6c7E8l9i3" },
-            { name: "Explorer's Clothing", icon: "systems/pf2e/icons/equipment/clothing/explorers-clothing.webp", uuid: "Compendium.pf2e.armor-srd.Item.e7rG7E9v0c3t5p4m" },
-            { name: "Padded Armor", icon: "systems/pf2e/icons/armor/padded-armor.webp", uuid: "Compendium.pf2e.armor-srd.Item.q0W6z6g5t1y2h4n3" },
-            { name: "Leather Armor", icon: "systems/pf2e/icons/armor/leather-armor.webp", uuid: "Compendium.pf2e.armor-srd.Item.K8s2z7w9x1e5u3j2" },
-            { name: "Splint Mail", icon: "systems/pf2e/icons/armor/splint-mail.webp", uuid: "Compendium.pf2e.armor-srd.Item.oI4y8u2t5c7v1b3n" },
-            { name: "Breastplate", icon: "systems/pf2e/icons/armor/breastplate.webp", uuid: "Compendium.pf2e.armor-srd.Item.aM2k7j9h1g4f8d0s" },
-        ],
-        weapon: [
-            { name: "Longsword", icon: "systems/pf2e/icons/weapons/longsword.webp", uuid: "Compendium.pf2e.weapons-srd.Item.vu6e3r6G8q3i1g2B" },
-            { name: "Greatclub", icon: "systems/pf2e/icons/weapons/greatclub.webp", uuid: "Compendium.pf2e.weapons-srd.Item.jC0P8u9a0c1t2r3s" },
-            { name: "Shortbow", icon: "systems/pf2e/icons/weapons/shortbow.webp", uuid: "Compendium.pf2e.weapons-srd.Item.W6H2K7z5j1r4u0a3" },
-            { name: "Dagger", icon: "systems/pf2e/icons/weapons/dagger.webp", uuid: "Compendium.pf2e.weapons-srd.Item.hdOaI4t3z5w1q8s3" },
-            { name: "Battle Axe", icon: "systems/pf2e/icons/weapons/battle-axe.webp", uuid: "Compendium.pf2e.weapons-srd.Item.zX9w3e7r5t0y1u2i" },
-            { name: "Falchion", icon: "systems/pf2e/icons/weapons/falchion.webp", uuid: "Compendium.pf2e.weapons-srd.Item.2e0f4d6s8a1g3h5j" },
-            { name: "Light Hammer", icon: "systems/pf2e/icons/weapons/light-hammer.webp", uuid: "Compendium.pf2e.weapons-srd.Item.qQ2b4c6v8n0m1j3k" },
-            { name: "Spear", icon: "systems/pf2e/icons/weapons/spear.webp", uuid: "Compendium.pf2e.weapons-srd.Item.c7e8r9t0y1u2i3o4" },
-            { name: "Staff", icon: "systems/pf2e/icons/weapons/staff.webp", uuid: "Compendium.pf2e.weapons-srd.Item.e5v0x2d4g6h8j1k3" },
-            { name: "Sling", icon: "systems/pf2e/icons/weapons/sling.webp", uuid: "Compendium.pf2e.weapons-srd.Item.y9u1i3o5p7a9s0d2" },
-        ],
-         equipment: [ // General magical/wondrous equipment
-            { name: "Bag of Holding (Type 1)", icon: "systems/pf2e/icons/equipment/backpacks/bag-of-holding.webp", uuid: "Compendium.pf2e.equipment-srd.Item.2ADuC0T0yQW1b7m0" },
-            { name: "Hat of Disguise", icon: "systems/pf2e/icons/equipment/headwear/hat-of-disguise.webp", uuid: "Compendium.pf2e.equipment-srd.Item.qJ4k7J9e5o1c3v6t" },
-            { name: "Goggles of Night", icon: "systems/pf2e/icons/equipment/worn-items/other-worn-items/goggles-of-night.webp", uuid: "Compendium.pf2e.equipment-srd.Item.hF3h8N1t6k0v7r5j" },
-            { name: "Cloak of Elvenkind", icon: "systems/pf2e/icons/equipment/worn-items/other-worn-items/cloak-of-elvenkind.webp", uuid: "Compendium.pf2e.equipment-srd.Item.fX2x5e7r9t0y1u3i" },
-            { name: "Boots of Speed", icon: "systems/pf2e/icons/equipment/worn-items/shoes/boots-of-speed.webp", uuid: "Compendium.pf2e.equipment-srd.Item.jL8k0h2g4f6d8s1a" },
-            { name: "Gloves of Arrow Snaring", icon: "systems/pf2e/icons/equipment/worn-items/other-worn-items/gloves-of-arrow-snaring.webp", uuid: "Compendium.pf2e.equipment-srd.Item.qP5p3s1a8d0f2g4h" },
-            { name: "Handy Haversack", icon: "systems/pf2e/icons/equipment/backpacks/handy-haversack.webp", uuid: "Compendium.pf2e.equipment-srd.Item.mZ7x9c1v3b5n0m2j" },
-            { name: "Rope of Climbing", icon: "systems/pf2e/icons/equipment/adventuring-gear/rope.webp", uuid: "Compendium.pf2e.equipment-srd.Item.rB0y2u4i6o8p1a3s" }, // Placeholder icon
-            { name: "Stone of Good Luck", icon: "systems/pf2e/icons/equipment/wondrous-items/specific-wondrous-items/stone-of-good-luck.webp", uuid: "Compendium.pf2e.equipment-srd.Item.tG4f6d8s1a3g5h7j" },
-            { name: "Amulet of Natural Armor (Greater)", icon: "systems/pf2e/icons/equipment/worn-items/other-worn-items/amulet-of-natural-armor.webp", uuid: "Compendium.pf2e.equipment-srd.Item.uI2o4p6a8s0d1f3g" },
-        ],
-        treasure: [
-            { name: "Onyx (10 gp)", icon: "systems/pf2e/icons/equipment/treasure/gems/large-gem-cluster.webp", uuid: "Compendium.pf2e.treasure-vault-srd.Item.0H3G1Y0S5R7O2F4E" }, // Placeholder icon
-            { name: "Jade (50 gp)", icon: "systems/pf2e/icons/equipment/treasure/gems/large-gem-cluster.webp", uuid: "Compendium.pf2e.treasure-vault-srd.Item.5G7J9H1K3L5M0N2P" }, // Placeholder icon
-            { name: "Ruby (100 gp)", icon: "systems/pf2e/icons/equipment/treasure/gems/large-gem-cluster.webp", uuid: "Compendium.pf2e.treasure-vault-srd.Item.9B1D3F5H7J0K2L4M" }, // Placeholder icon
-            { name: "Sapphire (500 gp)", icon: "systems/pf2e/icons/equipment/treasure/gems/large-gem-cluster.webp", uuid: "Compendium.pf2e.treasure-vault-srd.Item.2Q4R6T8V0X1Z3A5C" }, // Placeholder icon
-            { name: "Diamond (1000 gp)", icon: "systems/pf2e/icons/equipment/treasure/gems/large-gem-cluster.webp", uuid: "Compendium.pf2e.treasure-vault-srd.Item.7W9Y1Z3B5D7F0H2J" }, // Placeholder icon
-            { name: "Silver Comb (25 gp)", icon: "systems/pf2e/icons/equipment/treasure/art-objects/silver-comb.webp", uuid: "Compendium.pf2e.treasure-vault-srd.Item.1S3V5X7Z9B0D2F4H" },
-            { name: "Small Gold Idol (75 gp)", icon: "systems/pf2e/icons/equipment/treasure/art-objects/small-gold-idol.webp", uuid: "Compendium.pf2e.treasure-vault-srd.Item.6M8P0R2T4V6X8Z1A" },
-            { name: "Silver Ring (15 gp)", icon: "systems/pf2e/icons/equipment/treasure/art-objects/silver-ring.webp", uuid: "Compendium.pf2e.treasure-vault-srd.Item.4J6L8N0P2R4T6V8X" },
-            { name: "Painted Ceramic Vase (30 gp)", icon: "systems/pf2e/icons/equipment/treasure/art-objects/painted-ceramic-vase.webp", uuid: "Compendium.pf2e.treasure-vault-srd.Item.8E0G2I4K6M8O0Q2S" },
-            { name: "Bronze Goblet (10 gp)", icon: "systems/pf2e/icons/equipment/treasure/art-objects/bronze-goblet.webp", uuid: "Compendium.pf2e.treasure-vault-srd.Item.3A5C7E9G1I3K5M7O" },
-        ],
-        consumable: [ // Consumables excluding potion/scroll/wand traits
-            { name: "Alchemist's Fire (Lesser)", icon: "systems/pf2e/icons/consumables/alchemical-bombs/alchemists-fire.webp", uuid: "Compendium.pf2e.consumables-srd.Item.4J6L8N0P2R4T6V8X" },
-            { name: "Acid Flask (Lesser)", icon: "systems/pf2e/icons/consumables/alchemical-bombs/acid-flask.webp", uuid: "Compendium.pf2e.consumables-srd.Item.2Z0D4F8H1J5L9N3P" },
-            { name: "Thieve's Tools (Consumable)", icon: "systems/pf2e/icons/equipment/adventuring-gear/thieves-tools.webp", uuid: "Compendium.pf2e.equipment-srd.Item.vH4Yh8g5f0d3s1a9" },
-            { name: "Oil of Shimmering (Lesser)", icon: "systems/pf2e/icons/consumables/oils/oil-of-shimmering.webp", uuid: "Compendium.pf2e.consumables-srd.Item.yv6I2K4M6O8Q0S2U" },
-            { name: "Smelling Salts", icon: "systems/pf2e/icons/consumables/other/smelling-salts.webp", uuid: "Compendium.pf2e.consumables-srd.Item.zX2C5V8B0N3M6J9K" },
-            { name: "Sunrod", icon: "systems/pf2e/icons/equipment/adventuring-gear/sunrod.webp", uuid: "Compendium.pf2e.consumables-srd.Item.vB4N6M8J0K2L4P6R" },
-            { name: "Tanglefoot Bag (Lesser)", icon: "systems/pf2e/icons/consumables/mundane-bombs/tanglefoot-bag.webp", uuid: "Compendium.pf2e.consumables-srd.Item.tG8H0J2L4N6P8R1T" },
-            { name: "Thunderstone (Lesser)", icon: "systems/pf2e/icons/consumables/mundane-bombs/thunderstone.webp", uuid: "Compendium.pf2e.consumables-srd.Item.qE1W3R5T7Y9U0I2O" },
-            { name: "Smokestick (Lesser)", icon: "systems/pf2e/icons/consumables/mundane-bombs/smokestick.webp", uuid: "Compendium.pf2e.consumables-srd.Item.aD2F4G6H8J0K2L4M" },
-            { name: "Bottled Lightning (Lesser)", icon: "systems/pf2e/icons/consumables/alchemical-bombs/bottled-lightning.webp", uuid: "Compendium.pf2e.consumables-srd.Item.zX1C3V5B7N9M0J2K" },
-        ],
-        mundane: [ // Covers types like backpack, container, loot, and general non-magic/non-combat equipment
-            { name: "Sack", icon: "systems/pf2e/icons/equipment/adventuring-gear/sack.webp", uuid: "Compendium.pf2e.equipment-srd.Item.cnYfQh051zI0385b" },
-            { name: "Pouch", icon: "systems/pf2e/icons/equipment/held-items/pouch.webp", uuid: "Compendium.pf2e.equipment-srd.Item.P0vP8Z0s0o2G1x8J" },
-            { name: "Chest", icon: "systems/pf2e/icons/equipment/containers/chest.webp", uuid: "Compendium.pf2e.equipment-srd.Item.f679fK4K6F9B8X2B" },
-            { name: "Barrel", icon: "systems/pf2e/icons/equipment/containers/barrel.webp", uuid: "Compendium.pf2e.equipment-srd.Item.kM6c9j1r3t5y7u8i" },
-            { name: "Basket", icon: "systems/pf2e/icons/equipment/containers/basket.webp", uuid: "Compendium.pf2e.equipment-srd.Item.zQ2b4c6v8n0m1j3k" },
-            { name: "Bedroll", icon: "systems/pf2e/icons/equipment/adventuring-gear/bedroll.webp", uuid: "Compendium.pf2e.equipment-srd.Item.c9t2k1i0a4e5r8u3" },
-            { name: "Blanket", icon: "systems/pf2e/icons/equipment/adventuring-gear/blanket.webp", uuid: "Compendium.pf2e.equipment-srd.Item.e8rG7E9v0c3t5p4m" },
-            { name: "Chalk (10 pieces)", icon: "systems/pf2e/icons/equipment/adventuring-gear/chalk.webp", uuid: "Compendium.pf2e.equipment-srd.Item.tY1u3i5o7p9a0s2d" },
-            { name: "Fishing Tackle", icon: "systems/pf2e/icons/equipment/adventuring-gear/fishing-tackle.webp", uuid: "Compendium.pf2e.equipment-srd.Item.qW4r6t8y0u1i2o3p" },
-            { name: "Hammer", icon: "systems/pf2e/icons/equipment/tools/hammer.webp", uuid: "Compendium.pf2e.equipment-srd.Item.zX2C5V8B0N3M6J9K" },
-        ],
-    };
-
-
     this.SUPPORTED_IDENTIFY_FEATS = {
       "scholastic-identification": {
         name: "Scholastic Identification",
@@ -409,42 +297,6 @@ class SimplifiedCraftingModule {
       return null;
     }
     return dc;
-  }
-
-  _getGenericUnidentifiedName(item) {
-    const type = item?.type;
-    const traits = item?.system?.traits?.value ?? [];
-
-    if (type === "consumable") {
-      if (traits.includes("potion"))
-        return this.config.GENERIC_DECEPTIVE_NAMES.potion;
-      if (traits.includes("scroll"))
-        return this.config.GENERIC_DECEPTIVE_NAMES.scroll;
-      if (traits.includes("wand"))
-        return this.config.GENERIC_DECEPTIVE_NAMES.wand;
-      return this.config.GENERIC_DECEPTIVE_NAMES.consumable;
-    }
-    if (type === "weapon") return this.config.GENERIC_DECEPTIVE_NAMES.weapon;
-    if (type === "armor") return this.config.GENERIC_DECEPTIVE_NAMES.armor;
-    if (type === "equipment") {
-      if (traits.includes("wand"))
-        return this.config.GENERIC_DECEPTIVE_NAMES.wand;
-      return this.config.GENERIC_DECEPTIVE_NAMES.equipment;
-    }
-    if (type === "treasure")
-      return this.config.GENERIC_DECEPTIVE_NAMES.treasure;
-    if (type === "backpack")
-      return this.config.GENERIC_DECEPTIVE_NAMES.backpack;
-
-    return this.config.GENERIC_DECEPTIVE_NAMES.default;
-  }
-
-  _getGenericUnidentifiedDescription(item) {
-    const type = item?.type;
-    const desc =
-      this.config.GENERIC_DECEPTIVE_DESCRIPTIONS[type] ||
-      this.config.GENERIC_DECEPTIVE_DESCRIPTIONS.default;
-    return `<p>${desc}</p>${this.config.DECEPTIVE_CRIT_FAIL_MARKER}`;
   }
 
   _determineTargetActors(contextActor) {
@@ -915,7 +767,7 @@ class SimplifiedCraftingModule {
       if (
         hasCraftersAppraisal &&
         isTrainedInCrafting &&
-                craftersAppraisalConfig.substituteSkill
+        craftersAppraisalConfig.substituteSkill
       ) {
         possibleSkills.push(craftersAppraisalConfig.substituteSkill);
       }
@@ -1057,172 +909,379 @@ class SimplifiedCraftingModule {
 
       // --- CRITICAL FAILURE (Deceptive Replacement) ---
       // This 'if' block replaces the previous 'else if (isDeceptiveCritFail)'
-      if (dos === 0 && !assuredApplied) { // Explicit check for actual critical failure
-          itemDeletedAndReplaced = true; // Mark that replacement is happening
+// ... inside _attemptIdentification method
 
-          // 1. Store original item info (before deletion)
-      
-          const originalIdentifiedName = item._source?.name ?? item.name; // Prioritize _source.name, fallback to current name
-          const originalSourceData = item.toObject(true); // Get full source data if possible
-          const originalUUID = item.uuid; // UUID of the item *being deleted*
-          const originalSourceId = item.sourceId; // Original compendium source if available
-          const misidentificationTimestamp = new Date().toLocaleString();
-          const identifyingActorId = actor.id;
-          const identifyingActorName = actor.name;
-          const originalItemId = item.id; // ID on the actor
+// --- CRITICAL FAILURE (Deceptive Replacement) ---
+if (dos === 0 && !assuredApplied) { // Actual Critical Failure
+    itemDeletedAndReplaced = true;
 
-          ui.notifications.info(`Crit Fail Identifying ${originalIdentifiedName}. Replacing item...`, { permanent: false });
+    const originalIdentifiedName = item._source?.name ?? item.name;
+    const originalUUID = item.uuid;
+    const originalSourceId = item.sourceId;
+    const misidentificationTimestamp = new Date().toLocaleString();
+    const identifyingActorId = actor.id;
+    const identifyingActorName = actor.name;
+    const originalItemId = item.id;
+    
+    const originalItemType = item.type;
+    const originalItemLevel = item.level ?? 0;
+    const originalWeaponGroup = item.isOfType("weapon") ? item.system.group : null;
+    const originalArmorGroup = item.isOfType("armor") ? item.system.group : null;
+    const originalArmorCategory = item.isOfType("armor") ? item.system.category : null;
+    const significantConsumableTraits = ["potion", "scroll", "elixir", "bomb", "oil", "talisman", "ammo", "snare", "drug", "tool"];
+    let originalMainConsumableTrait = null;
+    if (item.isOfType("consumable")) {
+        originalMainConsumableTrait = item.system.traits.value.find(t => significantConsumableTraits.includes(t));
+    }
+    const originalEquipmentTraits = item.isOfType("equipment") ? item.system.traits.value : [];
 
-          // 2. Select Replacement Item from Compendiums
-          let replacementItemDataSource = null;
-          let selectedReplacementRef = null;
-          // Define compendiums for potential replacements (physical items)
-          const replacementCompendiums = [
-              "pf2e.equipment-srd",
-              "pf2e.weapons-srd",
-              "pf2e.armor-srd",
-              "pf2e.consumables-srd",
-              "pf2e.treasure-vault-srd", // Added treasure vault
-          ];
+    ui.notifications.info(
+      `Crit Fail Identifying ${originalIdentifiedName}. Misidentifying with a similar item...`,
+      { permanent: false }
+    );
 
-          try {
-              let potentialReplacements = [];
-              for (const packName of replacementCompendiums) {
-                  const pack = game.packs.get(packName);
-                  if (!pack) continue;
-                  // Index necessary fields: type for filtering, uuid for fetching
-                  const index = await pack.getIndex({ fields: ["name", "type", "uuid", "system.level.value"] });
-                  // Filter for physical items, excluding formulas, feats, spells, etc. and potentially high level items if desired
-                  potentialReplacements.push(...index.filter(i =>
-                       ["weapon", "armor", "equipment", "consumable", "treasure", "backpack", "container", "loot"].includes(i.type) &&
-                       !(i.name.startsWith("Formula:")) && // Exclude formulas explicitly
-                       (i.system?.level?.value ?? 0) <= (actor.level + 2) // Example: Limit replacements to reasonable level
-                  ));
-              }
+    let replacementItemDataSource = null;
+    let selectedReplacementRef = null;
+    const replacementCompendiums = [
+      "pf2e.equipment-srd",
+      "pf2e.weapons-srd",
+      "pf2e.armor-srd",
+      "pf2e.consumables-srd",
+      "pf2e.treasure-vault-srd",
+    ];
+    const physicalItemTypes = [
+        "weapon", "armor", "equipment", "consumable", "treasure", "backpack", "container", "loot"
+    ];
+    const indexFieldsToFetch = ["name", "type", "uuid", "system.level.value", "system.group", "system.category", "system.traits.value"];
 
-              if (potentialReplacements.length === 0) {
-                  throw new Error("No suitable replacement items found in specified compendiums.");
-              }
+    // --- INITIALIZE finalMisidentifiedName HERE ---
+    let finalMisidentifiedName = ""; // Initialize to ensure it's always defined
 
-              // Select a random item
-              const randomIndex = Math.floor(Math.random() * potentialReplacements.length);
-              selectedReplacementRef = potentialReplacements[randomIndex];
+    try {
+      let allPotentialItems = [];
+      for (const packName of replacementCompendiums) {
+        const pack = game.packs.get(packName);
+        if (!pack) continue;
+        const index = await pack.getIndex({ fields: indexFieldsToFetch });
+        
+        allPotentialItems.push(
+          ...index.filter(
+            (i) =>
+              physicalItemTypes.includes(i.type) &&
+              !i.name.startsWith("Formula:") &&
+              i.uuid !== item.sourceId && 
+              (i.system?.level?.value ?? 0) <= actor.level + 3 && 
+              (i.system?.level?.value ?? 0) >= Math.max(0, actor.level - 2) 
+          )
+        );
+      }
 
-              // Fetch the full data for the chosen replacement
-              const fetchedReplacement = await fromUuid(selectedReplacementRef.uuid);
-              if (!fetchedReplacement || !fetchedReplacement.isOfType("physical")) {
-                  throw new Error(`Failed to fetch or invalid type for replacement item ${selectedReplacementRef.name} (${selectedReplacementRef.uuid})`);
-              }
+      if (allPotentialItems.length === 0) {
+        throw new Error("No physical items found in the general level range across compendiums to serve as a replacement.");
+      }
 
-              replacementItemDataSource = fetchedReplacement.toObject(false); // Get source data to create a new item
-              delete replacementItemDataSource._id; // Ensure no ID conflict
-              replacementItemDataSource.system.quantity = 1; // Default to quantity 1
+      let specificMatches = [];
+      let typeMatches = [];
+      let chosenPool = [];
 
-          } catch (selectionError) {
-              ui.notifications.error(`Crit Fail Action Aborted: Error selecting/fetching replacement item: ${selectionError.message}`);
-              // IMPORTANT: Since we couldn't get a replacement, DO NOT delete the original item.
-              // Proceed as if it was a regular failure instead.
-              dos = 1; // Treat as regular failure
-              itemDeletedAndReplaced = false; // Cancel the replacement flag
-              ui.notifications.warn(`Crit Fail on ${originalIdentifiedName} reverted to regular Failure due to replacement error.`);
-              // The code will now fall through to the 'else' block below for failure handling.
-          }
-
-          // 3. Delete Original Item (ONLY if replacement was successfully selected)
-          if (itemDeletedAndReplaced && replacementItemDataSource) {
-              try {
-                  await actor.deleteEmbeddedDocuments("Item", [originalItemId]);
-                  console.log(`${this.moduleId} | Deleted original item ${originalIdentifiedName} (${originalItemId}) on actor ${actor.name} due to crit fail identification.`);
-              } catch (deleteError) {
-                  ui.notifications.error(`CRITICAL ERROR: Failed to delete original item ${originalIdentifiedName} (${originalItemId}) after crit fail. Replacement aborted. Please manually remove the original item. Error: ${deleteError.message}`);
-                  // We have the replacement data, but the original is still there. Log heavily.
-                  itemDeletedAndReplaced = false; // Cancel replacement process state
-                  ChatMessage.create({
-                     user: game.user.id, speaker: ChatMessage.getSpeaker({ alias: "System Error" }),
-                     content: `<b>Simplified Crafting Module ERROR:</b> Failed to delete original item ID ${originalItemId} (${originalIdentifiedName}) from ${actor.name} after a critical identification failure. A replacement item was selected (${selectedReplacementRef?.name}) but NOT created. Please manually remove the original item from the actor sheet.`,
-                     whisper: ChatMessage.getWhisperRecipients("GM").map(u=>u.id)
-                   });
-                  return; // Stop further processing for this item attempt
-              }
-          }
-
-          // 4. Create New (Replacement) Item (ONLY if original deleted successfully)
-          let newItemDoc = null;
-          if (itemDeletedAndReplaced && replacementItemDataSource) {
-               try {
-                    const createdDocs = await actor.createEmbeddedDocuments("Item", [replacementItemDataSource]);
-                    if (!createdDocs || createdDocs.length === 0) {
-                        throw new Error("Item creation call succeeded but returned no documents.");
-                    }
-                    newItemDoc = createdDocs[0];
-                    itemToLinkInChat = newItemDoc; // Update the item to link in the chat message
-                    console.log(`${this.moduleId} | Created replacement item ${newItemDoc.name} (${newItemDoc.id}) for actor ${actor.name}.`);
-
-                    // 5. Add GM Note to the NEW Item
-                    const gmNoteHeader = `--- Crit Fail Identification Replacement (${misidentificationTimestamp}) ---`;
-                    const gmNoteContent = `This item [${newItemDoc.name}] replaced the original item: <strong>${originalIdentifiedName}</strong>.<br>Original Item UUID (on actor): ${originalUUID || 'N/A'}<br>Original Compendium Source: ${originalSourceId || 'N/A'}<br>Misidentified By: ${identifyingActorName} (ID: ${identifyingActorId})<br><em>If the player attempts to use this item, they discover its true nature as ${newItemDoc.name}.</em>`;
-                    const currentGMNotes = newItemDoc.system.description?.gm ?? "";
-                    const newGMNotes = currentGMNotes ? `${gmNoteHeader}<br>${gmNoteContent}<hr>${currentGMNotes}` : `${gmNoteHeader}<br>${gmNoteContent}`;
-
-                    try {
-                        await newItemDoc.update({ "system.description.gm": newGMNotes });
-                    } catch (gmUpdateError) {
-                         ui.notifications.warn(`Failed to add GM note to replacement item ${newItemDoc.name}: ${gmUpdateError.message}`);
-                    }
-
-                } catch (creationError) {
-                    ui.notifications.error(`CRITICAL ERROR: Failed to create replacement item ${replacementItemDataSource?.name} after deleting original. Please manually add the intended replacement item. Error: ${creationError.message}`);
-                     ChatMessage.create({
-                         user: game.user.id, speaker: ChatMessage.getSpeaker({ alias: "System Error" }),
-                         content: `<b>Simplified Crafting Module ERROR:</b> Failed to create replacement item (${selectedReplacementRef?.name}) for ${actor.name} after deleting the original (${originalIdentifiedName}). Please manually add the replacement item based on the original crit fail.`,
-                         whisper: ChatMessage.getWhisperRecipients("GM").map(u=>u.id)
-                     });
-                    itemDeletedAndReplaced = false; // Ensure flag is consistent with state
-                    return; // Stop processing
-                }
-          }
-
-          // 6. Set Player Outcome Text (Deceptive Success)
-           playerOutcomeText = `<span style="color: ${
-             this.styles.successColor ?? "green"
-           }; font-weight: bold;">Success!</span> You understand the item's nature.`;
-           // No updateData needed for the *original* item as it's gone
-
-
-      // --- SUCCESS/CRITICAL SUCCESS ---
-      } else if (dos >= 2) {
-        playerOutcomeText = `<span style="color: ${
-          this.styles.successColor ?? "green"
-        }; font-weight: bold;">${
-          dos === 3 ? "Critical Success!" : "Success!"
-        }</span> You understand the item's nature.`;
-        updateData["system.identification.status"] = "identified";
-        // Clear our flag if it was previously set
-        updateData[
-          `flags.${this.moduleId}.-=${this.config.CRIT_FAIL_ORIGINAL_DATA_FLAG}`
-        ] = null;
-        // Clear any previous failure markers from the unidentified description
-        const currentUnidDesc =
-          item.system.identification?.unidentified?.data?.description?.value ?? "";
-        const cleanedDesc = currentUnidDesc.replace(
-          /(<!-- failureMarker:Fail_[^_]+_L\d+ -->|<!-- SCF:DECEPTIVE_CRIT_FAIL -->)/g, // Remove both types of markers
-          ""
-        ).replace(this.config.WRONGLY_IDENTIFIED_DESC,"").trim(); // Remove our specific description prefix
-
-        if (cleanedDesc !== currentUnidDesc) {
-          updateData[
-            "system.identification.unidentified.data.description.value"
-          ] = cleanedDesc || null; // Set to null if empty after cleaning
+      if (originalItemType === "weapon" && originalWeaponGroup) {
+        specificMatches = allPotentialItems.filter(p => p.type === "weapon" && p.system?.group === originalWeaponGroup);
+      } else if (originalItemType === "armor" && originalArmorGroup) {
+        specificMatches = allPotentialItems.filter(p => p.type === "armor" && p.system?.group === originalArmorGroup);
+        if (specificMatches.length > 1 && originalArmorCategory) { 
+            const categoryMatches = specificMatches.filter(p => p.system?.category === originalArmorCategory);
+            if (categoryMatches.length > 0) specificMatches = categoryMatches;
         }
-         // Also clean the main description if it contains the deceptive marker
-         const currentMainDesc = item.system.description?.value ?? "";
-         if(currentMainDesc.includes(this.config.DECEPTIVE_CRIT_FAIL_MARKER)){
-              updateData["system.description.value"] = currentMainDesc.replace(this.config.DECEPTIVE_CRIT_FAIL_MARKER, "").trim();
-         }
+      } else if (originalItemType === "consumable" && originalMainConsumableTrait) {
+        specificMatches = allPotentialItems.filter(p =>
+            p.type === "consumable" &&
+            p.system?.traits?.value?.includes(originalMainConsumableTrait)
+        );
+      } else if (originalItemType === "equipment") {
+        if (originalEquipmentTraits.includes("wand")) {
+            specificMatches = allPotentialItems.filter(p => p.type === "equipment" && p.system?.traits?.value?.includes("wand"));
+        } else if (originalEquipmentTraits.includes("staff")) {
+            specificMatches = allPotentialItems.filter(p => p.type === "equipment" && p.system?.traits?.value?.includes("staff"));
+        }
+      }
+
+      if (specificMatches.length > 0) {
+        chosenPool = specificMatches;
+      } else {
+        typeMatches = allPotentialItems.filter(p => p.type === originalItemType);
+        if (typeMatches.length > 0) {
+          chosenPool = typeMatches;
+        } else {
+          chosenPool = allPotentialItems;
+        }
+      }
+      
+      if (chosenPool.length === 0) { 
+        throw new Error(
+          `No suitable replacement items found even after all fallbacks for item ${originalIdentifiedName}.`
+        );
+      }
+
+      const randomIndex = Math.floor(Math.random() * chosenPool.length);
+      selectedReplacementRef = chosenPool[randomIndex];
+
+      const fetchedReplacement = await fromUuid(selectedReplacementRef.uuid);
+      if (!fetchedReplacement || !fetchedReplacement.isOfType("physical")) {
+        throw new Error(
+          `Failed to fetch or invalid type for chosen replacement item ${selectedReplacementRef.name} (${selectedReplacementRef.uuid})`
+        );
+      }
+
+      // --- LOGIC TO DETERMINE finalMisidentifiedName ---
+      const baseNameForReplacement = fetchedReplacement.name; // Name from compendium
+      const characterNameForReplacement = actor.name;
+      const idSuffixForReplacement = `(Id by ${characterNameForReplacement})`;
+      
+      if (baseNameForReplacement && !baseNameForReplacement.endsWith(idSuffixForReplacement)) {
+          finalMisidentifiedName = `${baseNameForReplacement} ${idSuffixForReplacement}`;
+      } else if (baseNameForReplacement) { // If it already ends with suffix or has no suffix and is just base name
+          finalMisidentifiedName = baseNameForReplacement;
+      } else {
+          // Fallback if fetchedReplacement.name is somehow empty
+          finalMisidentifiedName = `Misidentified Item ${idSuffixForReplacement}`;
+      }
+      // --- End logic for finalMisidentifiedName ---
+
+      replacementItemDataSource = fetchedReplacement.toObject(false); // Get the source object
+      delete replacementItemDataSource._id; // Remove existing ID for new creation
+
+      // Apply our modifications
+      replacementItemDataSource.name = finalMisidentifiedName; // This is _source.name
+      replacementItemDataSource.img = fetchedReplacement.img;   // This is _source.img (should be there from .toObject(false))
+
+      replacementItemDataSource.system.quantity = 1; 
+      replacementItemDataSource.system.identification = {
+        status: "identified", // It appears identified to the player
+        identified: {         // This object MUST exist
+          name: finalMisidentifiedName,       // Name player sees
+          img: fetchedReplacement.img,        // Image player sees
+          data: {                             // Good to have a structure
+              description: { value: fetchedReplacement.system.description?.value || "" } // Use replacement's description
+          }
+        },
+        unidentified: {     // This object should also exist, even with generic data
+          name: `Unidentified ${fetchedReplacement.type}`, // Generic
+          img: "icons/svg/mystery-man.svg",               // Generic
+          data: {
+            description: { value: "<p>The true nature of this item is obscured by your misjudgment.</p>" }
+          }
+        },
+        misidentifiedData: null, 
+      };
+      // Ensure other critical system properties are part of replacementItemDataSource.system
+      // fetchedReplacement.toObject(false) should have populated `system` already.
+      // We are just overriding/setting specific fields like name, img, identification.
+
+    } catch (selectionError) {
+      ui.notifications.error(
+        `Crit Fail Action Aborted: Error selecting/fetching replacement: ${selectionError.message}`
+      );
+      // Log the error if finalMisidentifiedName was involved in the error, though unlikely here
+      console.error("Error during replacement selection:", selectionError, "Current finalMisidentifiedName:", finalMisidentifiedName);
+      dos = 1; 
+      itemDeletedAndReplaced = false; 
+      ui.notifications.warn(
+        `Crit Fail on ${originalIdentifiedName} reverted to regular Failure due to replacement error.`
+      );
+    }
+
+    // The rest of the critical failure logic (delete original, create new, update GM notes)
+    // will use `finalMisidentifiedName` which should now be defined.
+
+    if (itemDeletedAndReplaced && replacementItemDataSource) {
+      try {
+        await actor.deleteEmbeddedDocuments("Item", [originalItemId]);
+      } catch (deleteError) {
+        ui.notifications.error(
+          `CRITICAL ERROR: Failed to delete original item ${originalIdentifiedName}. Replacement aborted. Error: ${deleteError.message}`
+        );
+        itemDeletedAndReplaced = false;
+        return;
+      }
+    
+      let newItemDoc = null;
+      try {
+        const createdDocs = await actor.createEmbeddedDocuments("Item", [
+          replacementItemDataSource, // This now has the correctly structured name and identification
+        ]);
+        if (!createdDocs || createdDocs.length === 0) {
+          throw new Error("Replacement item creation returned no documents.");
+        }
+        newItemDoc = createdDocs[0];
+        itemToLinkInChat = newItemDoc; // newItemDoc.name should reflect finalMisidentifiedName
+        
+
+        const gmNoteHeader = `--- Critical Failure on Identification (${misidentificationTimestamp}) ---`;
+        
+        // Simplified GM Note Content
+        const gmNoteContent = 
+          `<strong>Player:</strong> ${identifyingActorName}<br>` +
+          `<strong>Player Believes They Identified:</strong> "${newItemDoc.name}" (This is the deceptive item they now possess).<br>` +
+          `<strong>Actual Item Misidentified:</strong> "${originalIdentifiedName}" (Type: ${originalItemType}, Level: ${originalItemLevel}). This item was removed and replaced.<br>` +
+          `<em>The player is unaware of the misidentification.</em>`;
+
+        const currentGMNotes = newItemDoc.system.description?.gm ?? "";
+        
+        // Prepend the new, simplified note
+        const newGMNotes = `${gmNoteHeader}\n${gmNoteContent}\n${currentGMNotes ? "<hr>" + currentGMNotes : ""}`;
+        // Using \n for newlines in the GM note often renders better than <br> if it's just plain text.
+        // If you want HTML formatting, stick with <br> and <hr>.
+
+        let updateForNewItem = { 
+            "system.description.gm": newGMNotes,
+        };
+        
+
+        // The block you had for renaming the REPLACEMENT item to include "(Id by Character Name)"
+        // is now handled *before* creation by setting replacementItemDataSource.name = finalMisidentifiedName
+        // and replacementItemDataSource.system.identification.identified.name = finalMisidentifiedName.
+        // So, the update here is simpler.
+
+        await newItemDoc.update(updateForNewItem);
+        console.log(
+            `${this.moduleId} | CritFail ID: Replaced ${originalIdentifiedName} with ${newItemDoc.name} (which is finalMisidentifiedName).`
+        );
+
+      } catch (creationError) {
+        ui.notifications.error(
+          `CRITICAL ERROR: Failed to create/update replacement item ${replacementItemDataSource?.name}. Error: ${creationError.message}`
+        );
+        // Log the error if finalMisidentifiedName was involved, e.g. if replacementItemDataSource.name was undefined
+        console.error("Error during replacement creation/update:", creationError, "Replacement data source name:", replacementItemDataSource?.name);
+        itemDeletedAndReplaced = false; 
+        return; 
+      }
+    }
+    // Player outcome text is for success because they *think* they succeeded
+    playerOutcomeText = `<span style="color: ${
+      this.styles.successColor ?? "green"
+    }; font-weight: bold;">Success!</span> You understand the item's nature.`;
+// This closes: if (dos === 0 && !assuredApplied)
+} 
+// ... then the `else if (dos >= 2)` block
+// ... then the `else` block for `dos === 1` (Failure)
+    
+    
+    
+    else if (dos >= 2) { // Success or Critical Success
+    playerOutcomeText = `<span style="color: ${
+      this.styles.successColor ?? "green"
+    }; font-weight: bold;">${
+      dos === 3 ? "Critical Success!" : "Success!"
+    }</span> You understand the item's nature.`;
+    updateData["system.identification.status"] = "identified";
+
+    // ----- PROBLEM AREA LIKELY STARTS HERE -----
+    let baseNameForItemSuffix = "";
+    // This block determines baseNameForItemSuffix
+    if (item.system.identification?.identified?.name && item.system.identification.identified.name.trim() !== "") {
+        baseNameForItemSuffix = item.system.identification.identified.name.trim();
+    } else if (item._source?.name && item._source.name.trim() !== "") { // Check _source.name too
+        baseNameForItemSuffix = item._source.name.trim();
+    } else { // Fallback to current item.name if the others are empty
+        baseNameForItemSuffix = item.name.replace(/\s*\((?:Id by .*?|Crafted by .*?|Unidentified)\)$/i, "").trim();
+    }
+    
+    const characterName = actor.name;
+    const idSuffix = `(Id by ${characterName})`;
+    
+    // --- INITIALIZE finalIdentifiedName HERE ---
+    let finalIdentifiedName = ""; // Initialize to an empty string or a default
+
+    if (baseNameForItemSuffix && baseNameForItemSuffix.trim() !== "") { // Ensure baseName is not just whitespace
+        if (!baseNameForItemSuffix.endsWith(idSuffix)) {
+            finalIdentifiedName = `${baseNameForItemSuffix} ${idSuffix}`;
+        } else {
+            // It already has the correct suffix (or is the base name if suffix logic is skipped)
+            finalIdentifiedName = baseNameForItemSuffix; 
+        }
+    } else {
+        // baseNameForItemSuffix was empty or only whitespace.
+        // This could happen if item.name was just "(Unidentified)" or similar.
+        // We need a sensible default.
+        // Let's try to get the 'true' name from the item if possible,
+        // otherwise construct a very generic one.
+        let trueBaseName = item.system.identification?.identified?.name || // True identified name if it exists
+                           item._source?.name ||                            // Original source name
+                           item.name;                                      // Current name as last resort
+
+        // Clean up any existing suffixes from this fallback trueBaseName
+        trueBaseName = trueBaseName.replace(/\s*\((?:Id by .*?|Crafted by .*?|Unidentified)\)$/i, "").trim();
+
+        if (trueBaseName && trueBaseName.trim() !== "") {
+            finalIdentifiedName = `${trueBaseName} ${idSuffix}`;
+        } else {
+            // Absolute fallback if even trueBaseName is empty
+            finalIdentifiedName = `Identified Item ${idSuffix}`; 
+        }
+    }
+    // At this point, finalIdentifiedName should always be defined.
+
+    // ----- END OF POTENTIAL PROBLEM AREA -----
+
+    updateData["name"] = finalIdentifiedName; 
+    updateData["system.identification.identified.name"] = finalIdentifiedName;
+    updateData["system.identification.identified.img"] = item.img; 
+
+    // Adding the safety checks for unidentified structure as discussed before:
+    if (!item.system.identification.unidentified) {
+        updateData["system.identification.unidentified"] = {
+            name: `Unidentified ${item.type}`,
+            img: "icons/svg/mystery-man.svg",
+            data: { description: { value: "" } }
+        };
+    } else {
+        if (typeof item.system.identification.unidentified.name !== 'string') {
+            updateData["system.identification.unidentified.name"] = `Unidentified ${item.type}`;
+        }
+        if (typeof item.system.identification.unidentified.img !== 'string') {
+            updateData["system.identification.unidentified.img"] = "icons/svg/mystery-man.svg";
+        }
+    }
+    // Similar check for identified structure if it could be missing (less likely if status is 'identified')
+    if (!item.system.identification.identified) { // Should not happen if status is 'identified' but for extreme safety
+        updateData["system.identification.identified.data"] = { description: { value: item.system.description.value || "" } };
+    }
 
 
-      // --- FAILURE (or Crit Fail reduced by Assured ID) ---
-      } else { // dos === 1
+    updateData[
+      `flags.${this.moduleId}.-=${this.config.CRIT_FAIL_ORIGINAL_DATA_FLAG}`
+    ] = null;
+    
+    const currentUnidDesc =
+      item.system.identification?.unidentified?.data?.description?.value ?? "";
+    const cleanedDesc = currentUnidDesc
+      .replace(
+        /(<!-- failureMarker:Fail_[^_]+_L\d+ -->|<!-- SCF:DECEPTIVE_CRIT_FAIL -->)/g, 
+        ""
+      )
+      .replace(this.config.WRONGLY_IDENTIFIED_DESC, "")
+      .trim(); 
+
+    if (cleanedDesc !== currentUnidDesc) {
+      updateData[
+        "system.identification.unidentified.data.description.value"
+      ] = cleanedDesc || null; 
+    }
+    
+    const currentMainDesc = item.system.description?.value ?? "";
+    if (currentMainDesc.includes(this.config.DECEPTIVE_CRIT_FAIL_MARKER)) {
+      updateData["system.description.value"] = currentMainDesc
+        .replace(this.config.DECEPTIVE_CRIT_FAIL_MARKER, "")
+        .trim();
+    }
+      
+      
+      
+  }
+      
+      else {
+        // dos === 1
         const lvl = actor.level;
         const failMarker = `<!-- failureMarker:Fail_${actor.id}_L${lvl} -->`;
         playerOutcomeText = `<span style="color: orange; font-weight: bold;">Failure.</span> The item resists scrutiny.`;
@@ -1235,40 +1294,55 @@ class SimplifiedCraftingModule {
 
         updateData["system.identification.status"] = "unidentified";
 
-        const descPath = "system.identification.unidentified.data.description.value";
-        let currentUnidDesc = item.system.identification?.unidentified?.data?.description?.value ?? "";
+        const descPath =
+          "system.identification.unidentified.data.description.value";
+        let currentUnidDesc =
+          item.system.identification?.unidentified?.data?.description?.value ??
+          "";
         // Remove *old* failure markers for *other actors/levels* before adding the new one
-        currentUnidDesc = currentUnidDesc.replace(/<!-- failureMarker:Fail_[^_]+_L\d+ -->/g, "").trim();
-         // Remove deceptive markers/text as well, since it's now just a normal failure
-         currentUnidDesc = currentUnidDesc.replace(this.config.DECEPTIVE_CRIT_FAIL_MARKER, "").trim();
-         currentUnidDesc = currentUnidDesc.replace(this.config.WRONGLY_IDENTIFIED_DESC,"").trim();
+        currentUnidDesc = currentUnidDesc
+          .replace(/<!-- failureMarker:Fail_[^_]+_L\d+ -->/g, "")
+          .trim();
+        // Remove deceptive markers/text as well, since it's now just a normal failure
+        currentUnidDesc = currentUnidDesc
+          .replace(this.config.DECEPTIVE_CRIT_FAIL_MARKER, "")
+          .trim();
+        currentUnidDesc = currentUnidDesc
+          .replace(this.config.WRONGLY_IDENTIFIED_DESC, "")
+          .trim();
 
-        updateData[descPath] = currentUnidDesc ? `${currentUnidDesc} ${failMarker}` : failMarker; // Add new marker
+        updateData[descPath] = currentUnidDesc
+          ? `${currentUnidDesc} ${failMarker}`
+          : failMarker; // Add new marker
 
         // Clear our flag if it was previously set
         updateData[
           `flags.${this.moduleId}.-=${this.config.CRIT_FAIL_ORIGINAL_DATA_FLAG}`
         ] = null;
-         // Also clean the main description if it contains the deceptive marker
-         const currentMainDesc = item.system.description?.value ?? "";
-         if(currentMainDesc.includes(this.config.DECEPTIVE_CRIT_FAIL_MARKER)){
-              updateData["system.description.value"] = currentMainDesc.replace(this.config.DECEPTIVE_CRIT_FAIL_MARKER, "").trim();
-         }
+        // Also clean the main description if it contains the deceptive marker
+        const currentMainDesc = item.system.description?.value ?? "";
+        if (currentMainDesc.includes(this.config.DECEPTIVE_CRIT_FAIL_MARKER)) {
+          updateData["system.description.value"] = currentMainDesc
+            .replace(this.config.DECEPTIVE_CRIT_FAIL_MARKER, "")
+            .trim();
+        }
       }
 
       // Apply updates ONLY if the item wasn't deleted/replaced
       if (!itemDeletedAndReplaced && Object.keys(updateData).length > 0) {
-         try {
-              await item.update(updateData);
-              await new Promise((resolve) => setTimeout(resolve, 50)); // Short pause for data propagation
-         } catch (updateError) {
-              ui.notifications.error(`Error updating item ${item.name} after identification attempt: ${updateError.message}`);
-              // Log error but continue to chat message generation
-         }
+        try {
+          await item.update(updateData);
+          await new Promise((resolve) => setTimeout(resolve, 50)); // Short pause for data propagation
+        } catch (updateError) {
+          ui.notifications.error(
+            `Error updating item ${item.name} after identification attempt: ${updateError.message}`
+          );
+          // Log error but continue to chat message generation
+        }
       }
 
       // --- Chat Message Generation ---
-      // Fetch the final state of the item *to be linked* (could be the original or the replacement)
+
       const finalLinkedItem = actor.items.get(itemToLinkInChat.id); // Use the ID of the item we intend to link
 
       let nameToShow = "Unknown Item";
@@ -1277,45 +1351,64 @@ class SimplifiedCraftingModule {
       let retryText = "";
 
       if (!finalLinkedItem) {
-          // This might happen if the replacement failed catastrophically or if there's a timing issue
-          nameToShow = itemToLinkInChat?.name ?? "Item (State Error)";
-          iconToShow = itemToLinkInChat?.img ?? "icons/svg/hazard.svg";
-          itemLink = itemToLinkInChat?.uuid ? `@UUID[${itemToLinkInChat.uuid}]{${nameToShow}} (Post-Op Fetch Failed)` : nameToShow;
-          ui.notifications.warn(`Could not fetch final state for item ${itemToLinkInChat?.id} to generate chat link.`);
+        nameToShow = itemToLinkInChat?.name ?? "Item (State Error)";
+        iconToShow = itemToLinkInChat?.img ?? "icons/svg/hazard.svg";
+        itemLink = itemToLinkInChat?.uuid
+          ? `@UUID[${itemToLinkInChat.uuid}]{${nameToShow}} (Post-Op Fetch Failed)`
+          : nameToShow;
+        ui.notifications.warn(
+          `Could not fetch final state for item ${itemToLinkInChat?.id} to generate chat link.`
+        );
       } else {
-           // If the item linked is the *replacement*, it should *appear* identified to the player
-          if (itemDeletedAndReplaced || finalLinkedItem.isIdentified) {
-              nameToShow = finalLinkedItem.name;
-              iconToShow = finalLinkedItem.img;
-              itemLink = `@UUID[${finalLinkedItem.uuid}]{${nameToShow}}`;
-          } else { // Item is the original and remains unidentified (normal failure/success case)
-              nameToShow = finalLinkedItem.system.identification?.unidentified?.data?.name?.value || "Unidentified Item";
-              iconToShow = finalLinkedItem.system.identification?.unidentified?.data?.img || "icons/svg/mystery-man.svg";
-              itemLink = `@UUID[${finalLinkedItem.uuid}]{${nameToShow}}`; // Link shows unidentified name
+        // If the item linked is the *replacement*, it should *appear* identified to the player
+        if (itemDeletedAndReplaced || finalLinkedItem.isIdentified) {
+          nameToShow = finalLinkedItem.name;
+          iconToShow = finalLinkedItem.img;
+          itemLink = `@UUID[${finalLinkedItem.uuid}]{${nameToShow}}`;
+        } else {
+          // Item is the original and remains unidentified (normal failure/success case)
+          nameToShow =
+            finalLinkedItem.system.identification?.unidentified?.data?.name
+              ?.value || "Unidentified Item";
+          iconToShow =
+            finalLinkedItem.system.identification?.unidentified?.data?.img ||
+            "icons/svg/mystery-man.svg";
+          itemLink = `@UUID[${finalLinkedItem.uuid}]{${nameToShow}}`; // Link shows unidentified name
 
-              if (dos === 1) { // Add retry text only on actual failure
-                  retryText = `<p style="font-size:0.8em; color: #800000;"><em>(Cannot retry with this skill until Level ${actor.level + 1})</em></p>`;
-              }
+          if (dos === 1) {
+            // Add retry text only on actual failure
+            retryText = `<p style="font-size:0.8em; color: #800000;"><em>(Cannot retry with this skill until Level ${
+              actor.level + 1
+            })</em></p>`;
           }
+        }
       }
 
       // Construct the chat message flavor text
       chatFlavor = `
               <div class="pf2e chat-card" style="padding: 3px; border: 1px solid var(--color-border-light-tertiary); font-size: 14px;">
                   <header class="card-header flexrow" style="border-bottom: 1px solid var(--color-border-light-tertiary); padding-bottom: 3px; margin-bottom: 3px;">
-                      <img src="${actor.img}" title="${actor.name}" width="36" height="36" style="border: none; margin-right: 5px; flex-shrink: 0;">
+                      <img src="${actor.img}" title="${
+        actor.name
+      }" width="36" height="36" style="border: none; margin-right: 5px; flex-shrink: 0;">
                       <img src="${iconToShow}" title="${nameToShow}" width="36" height="36" style="border: none; margin-right: 5px; flex-shrink: 0;">
                       <h3 style="flex: 1; margin: 0; line-height: 36px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Identify Item</h3>
                   </header>
                   <div class="card-content" style="font-size: 0.95em;">
-                      <p style="margin: 2px 0;"><strong>Attempted by:</strong> ${actor.name} using ${stat.label}</p>
+                      <p style="margin: 2px 0;"><strong>Attempted by:</strong> ${
+                        actor.name
+                      } using ${stat.label}</p>
                       <p style="margin: 2px 0;"><strong>Item:</strong> ${itemLink}</p>
                       <hr style="margin: 5px 0;">
                       <div style="margin: 0px 0;">
                           <strong>Result:</strong> ${playerOutcomeText}
                       </div>
                       ${retryText}
-                      ${itemDeletedAndReplaced ? `<p style="font-size:0.8em; color: #550055; font-style:italic;"></p>` : ''}
+                      ${
+                        itemDeletedAndReplaced
+                          ? `<p style="font-size:0.8em; color: #550055; font-style:italic;"></p>`
+                          : ""
+                      }
                   </div>
               </div>`;
 
@@ -1326,41 +1419,48 @@ class SimplifiedCraftingModule {
         type: CONST.CHAT_MESSAGE_TYPES.ROLL, // Keep type roll to associate with the blind roll
         roll: roll.toJSON(), // Pass the roll data
         blind: true, // Ensure it respects the original roll's blindness
-        whisper: ChatMessage.getWhisperRecipients("GM").map(u => u.id).concat(game.user.id), // Whisper to GM and self
+        whisper: ChatMessage.getWhisperRecipients("GM")
+          .map((u) => u.id)
+          .concat(game.user.id), // Whisper to GM and self
         flags: {
           core: { canPopout: true },
-           "pf2e.origin": { // Link to the skill check
-                type: "skill",
-                uuid: stat.item?.uuid, // UUID of the skill's Ability item if available
-                slug: stat.slug,
-            }
+          "pf2e.origin": {
+            // Link to the skill check
+            type: "skill",
+            uuid: stat.item?.uuid, // UUID of the skill's Ability item if available
+            slug: stat.slug,
+          },
         },
       });
 
       ui.notifications.info(
         `Identification attempt for "${nameToShow}" complete.`
       );
-
     } catch (err) {
-       console.error(`${this.moduleId} | Error during identification attempt for item ID ${item?.id} on actor ${actor?.id}:`, err);
-       ui.notifications.error(
-         `Error during identification attempt for "${
-           item?.name ?? "an item"
-         }". Check console (F12) for details.`
-       );
-       // Send OOC error message
-       const errorContent = `<strong style="color:red;">Identification Error:</strong> An unexpected error occurred while ${
-         actor?.name ?? "Someone"
-       } attempted to identify "${
-         item?.name ?? "an item"
-       }". Please see the console (F12) for technical details. Error: ${err.message}`;
-       ChatMessage.create({
-         user: game.user.id,
-         speaker: ChatMessage.getSpeaker({ actor }),
-         content: errorContent,
-         type: CONST.CHAT_MESSAGE_TYPES.OOC,
-         whisper: ChatMessage.getWhisperRecipients("GM").map(u=>u.id) // Whisper error to GM
-       });
+      console.error(
+        `${this.moduleId} | Error during identification attempt for item ID ${item?.id} on actor ${actor?.id}:`,
+        err
+      );
+      ui.notifications.error(
+        `Error during identification attempt for "${
+          item?.name ?? "an item"
+        }". Check console (F12) for details.`
+      );
+      // Send OOC error message
+      const errorContent = `<strong style="color:red;">Identification Error:</strong> An unexpected error occurred while ${
+        actor?.name ?? "Someone"
+      } attempted to identify "${
+        item?.name ?? "an item"
+      }". Please see the console (F12) for technical details. Error: ${
+        err.message
+      }`;
+      ChatMessage.create({
+        user: game.user.id,
+        speaker: ChatMessage.getSpeaker({ actor }),
+        content: errorContent,
+        type: CONST.CHAT_MESSAGE_TYPES.OOC,
+        whisper: ChatMessage.getWhisperRecipients("GM").map((u) => u.id), // Whisper error to GM
+      });
     }
   } // End _attemptIdentification
 
@@ -1845,68 +1945,71 @@ class SimplifiedCraftingModule {
     ).render(true);
   }
 
+  _calculateMaterialConsumptionDetails(materials, consumeFiftyPercentChance) {
+    const consumptionDetails = [];
+    let consumedCount = 0;
+    let savedCount = 0;
+
+    materials.forEach((m) => {
+      let unitsToConsume = 0;
+      if (consumeFiftyPercentChance) {
+        for (let i = 0; i < m.quantity; i++) {
+          if (Math.random() < 0.5) unitsToConsume++;
+        }
+      } else {
+        unitsToConsume = m.quantity;
+      }
+
+      if (unitsToConsume > 0) {
+        consumptionDetails.push({
+          id: m.id,
+          name: m.name,
+          quantityToConsume: unitsToConsume,
+        });
+      }
+      consumedCount += unitsToConsume;
+      savedCount += m.quantity - unitsToConsume;
+    });
+
+    return {
+      consumptionDetails,
+      totalUnitsConsumed: consumedCount,
+      totalUnitsSaved: savedCount,
+    };
+  }
+
   async _attemptCrafting(
     actor,
     targetItemUuid,
-    targetData,
+    targetData, // Contains targetItem.name, .icon, .level, .priceGP
     materialsUsed,
     valueUsed,
     requiredValue
   ) {
     let roll = null;
-    let rollTotal = null;
     let successDegree = -1;
-    let rollOutcomeText = "";
-    let baseDC = null;
     let outcomeMessage = "";
-    let finalChatMessage = "";
-    let createdDocs = [];
-    let consumedMaterials = [];
-    let totalUnitsConsumed = 0;
-    let totalUnitsSaved = 0;
-    const craftSkill = actor.skills.crafting;
-    const timeStringPerItem = targetData.timeString;
-    const crafterName = actor.name || "Unknown Crafter";
+    // let createdDoc = null; // We'll get this from tempCreatedDoc
     let soundInstance = null;
     let loadingIndicatorElement = null;
-    let outcomeColor = "#191813";
+    let animationFrameId = null;
+
+    const crafterName = actor.name || "Unknown Crafter";
+    const craftSkill = actor.skills.crafting;
+    const timeStringPerItem = targetData.timeString;
+    let chatMessageColor = this.styles.neutralColor || "#191813";
+
+    if (!craftSkill) {
+      ui.notifications.error(
+        `Crafting skill missing for ${actor.name}. Cannot craft.`
+      );
+      return;
+    }
 
     try {
-      const calculateMaterialConsumption = (
-        materials,
-        consumeFiftyPercentChance
-      ) => {
-        const consumptionDetails = [];
-        let consumedCount = 0;
-        let savedCount = 0;
-        materials.forEach((m) => {
-          let unitsToConsume = 0;
-          if (consumeFiftyPercentChance) {
-            for (let i = 0; i < m.quantity; i++) {
-              if (Math.random() < 0.5) unitsToConsume++;
-            }
-          } else {
-            unitsToConsume = m.quantity;
-          }
-          if (unitsToConsume > 0) {
-            consumptionDetails.push({
-              id: m.id,
-              name: m.name,
-              quantityToConsume: unitsToConsume,
-            });
-          }
-          consumedCount += unitsToConsume;
-          savedCount += m.quantity - unitsToConsume;
-        });
-        return {
-          consumptionDetails,
-          totalUnitsConsumed: consumedCount,
-          totalUnitsSaved: savedCount,
-        };
-      };
-
-      const itemLevel = targetData.level;
-      const dcLevel = Math.max(0, itemLevel);
+      // ... (DC calculation logic - remains the same) ...
+      let baseDC;
+      const itemLevelForDC = Math.max(0, targetData.level);
       if (
         typeof targetData.dcFromSheet === "number" &&
         !isNaN(targetData.dcFromSheet) &&
@@ -1926,24 +2029,16 @@ class SimplifiedCraftingModule {
           baseDC = craftingEntry.dc;
         } else {
           if (typeof pf2e?.DC?.calculate === "function") {
-            const proficiencyRank = craftSkill?.rank ?? 1;
-            baseDC = pf2e.DC.calculate(dcLevel, {
-              proficiencyRank: proficiencyRank,
+            baseDC = pf2e.DC.calculate(itemLevelForDC, {
+              proficiencyRank: craftSkill?.rank ?? 1,
             });
-            if (!baseDC || typeof baseDC !== "number" || baseDC <= 0) {
-              const fallbackDCs = [
-                14, 15, 16, 18, 19, 20, 22, 23, 24, 26, 27, 28, 30, 31, 32, 34,
-                35, 36, 38, 39, 40, 42, 44, 46, 48, 50,
-              ];
-              baseDC = fallbackDCs[dcLevel] ?? 10;
-            } else {
-            }
-          } else {
+          }
+          if (!baseDC || typeof baseDC !== "number" || baseDC <= 0) {
             const fallbackDCs = [
               14, 15, 16, 18, 19, 20, 22, 23, 24, 26, 27, 28, 30, 31, 32, 34,
               35, 36, 38, 39, 40, 42, 44, 46, 48, 50,
             ];
-            baseDC = fallbackDCs[dcLevel] ?? 10;
+            baseDC = fallbackDCs[itemLevelForDC] ?? 10;
           }
         }
       }
@@ -1954,153 +2049,140 @@ class SimplifiedCraftingModule {
         return;
       }
 
-      if (!craftSkill) {
-        ui.notifications.error(
-          `Crafting skill missing for ${actor.name}. Cannot craft.`
-        );
-        return;
-      }
-
+      // ... (Roll logic - remains the same) ...
       roll = await craftSkill.roll({
         dc: { value: baseDC },
-        extraRollOptions: ["action:craft"],
+        extraRollOptions: ["action:craft", `item:level:${targetData.level}`],
         title: `Craft: ${targetData.name}`,
-        info: `Using materials worth ${valueUsed.toFixed(
+        flavor: `Using materials worth ${valueUsed.toFixed(
           2
-        )} gp (Required: ${requiredValue.toFixed(2)} gp)`,
+        )} gp (Req: ${requiredValue.toFixed(2)} gp) for ${
+          targetData.name
+        }. DC ${baseDC}.`,
         skipDialog: false,
       });
+
       if (!roll) {
         ui.notifications.warn("Crafting roll cancelled.");
         return;
       }
-      rollTotal = roll.total;
       successDegree = roll.degreeOfSuccess;
-      rollOutcomeText = roll.outcome
+      const rollOutcomeText = roll.outcome
         ? game.i18n.localize(`PF2E.Check.Result.Degree.Check.${roll.outcome}`)
         : `Degree ${successDegree}`;
 
-      let soundToPlay = null;
-      if (successDegree >= 2) {
-        soundToPlay = this.sounds.success;
-        outcomeColor = this.styles.successColor;
-      } else {
-        soundToPlay = this.sounds.failure;
-        outcomeColor = this.styles.failureColor;
-      }
 
-      if (soundToPlay) {
-        try {
-          AudioHelper.play(
-            { src: soundToPlay, volume: 0.8, autoplay: true },
-            false
-          );
-        } catch (soundError) {}
-      }
-
-      try {
-        const token = actor.getActiveTokens()[0];
-        if (token) {
-          const animText = successDegree >= 2 ? "Success!" : "Failure!";
-          const animColor =
-            successDegree >= 2
-              ? this.styles.successColor
-              : this.styles.failureColor;
-          canvas.interface.createScrollingText(token.center, animText, {
-            anchor: CONST.TEXT_ANCHOR_POINTS.CENTER,
-            fontSize: 28,
-            fill: animColor,
-            stroke: 0x000000,
-            strokeThickness: 4,
-            duration: 3500,
-          });
-        } else {
-        }
-      } catch (animError) {}
-
-      const loopSoundPath = this.sounds.craftingLoop;
-      try {
-        soundInstance = await AudioHelper.play(
-          { src: loopSoundPath, volume: 0.6, autoplay: true, loop: true },
+      // ... (Sound and animation - remains the same) ...
+      let soundToPlay =
+        successDegree >= 2 ? this.sounds.success : this.sounds.failure;
+      if (soundToPlay)
+        AudioHelper.play(
+          { src: soundToPlay, volume: 0.8, autoplay: true },
           false
         );
-        if (!soundInstance) {
-        }
-      } catch (soundError) {}
-
+      const token = actor.getActiveTokens()[0];
+      if (token) {
+        const animText = successDegree >= 2 ? "Success!" : "Failure!";
+        const animColor =
+          successDegree >= 2
+            ? this.styles.successColor || "green"
+            : this.styles.failureColor || "darkred";
+        canvas.interface.createScrollingText(token.center, animText, {
+          anchor: CONST.TEXT_ANCHOR_POINTS.CENTER,
+          fontSize: 28,
+          fill: animColor,
+          stroke: 0x000000,
+          strokeThickness: 4,
+          duration: 5000,
+        });
+      }
+      if (this.sounds.craftingLoop) {
+        soundInstance = await AudioHelper.play(
+          {
+            src: this.sounds.craftingLoop,
+            volume: 0.6,
+            autoplay: true,
+            loop: true,
+          },
+          false
+        );
+      }
       loadingIndicatorElement = document.createElement("div");
       loadingIndicatorElement.id = `crafting-loading-${foundry.utils.randomID()}`;
-      loadingIndicatorElement.style.position = "fixed";
-      loadingIndicatorElement.style.top = "50%";
-      loadingIndicatorElement.style.left = "50%";
-      loadingIndicatorElement.style.transform = "translate(-50%, -50%)";
-      loadingIndicatorElement.style.backgroundColor = "rgba(0, 0, 0, 0.75)";
-      loadingIndicatorElement.style.color = "white";
-      loadingIndicatorElement.style.padding = "20px 30px";
-      loadingIndicatorElement.style.borderRadius = "8px";
-      loadingIndicatorElement.style.zIndex = "10000";
-      loadingIndicatorElement.style.textAlign = "center";
-      loadingIndicatorElement.style.fontSize = "1.2em";
-      loadingIndicatorElement.innerHTML = `<i class="fas fa-hammer fa-spin fa-fw fa-2x" style="margin-bottom: 10px;"></i><br>Forging ${targetData.name}...`;
+      Object.assign(loadingIndicatorElement.style, {
+        position: "fixed",
+        top: "50%",
+        left: "50%",
+        transform: "translate(-50%, -50%)",
+        backgroundColor: "rgba(0, 0, 0, 0.75)",
+        color: "white",
+        padding: "20px 30px",
+        borderRadius: "8px",
+        zIndex: "10000",
+        textAlign: "center",
+        fontSize: "1.2em",
+      });
+      loadingIndicatorElement.innerHTML = `
+        <div style="margin-bottom: 10px;">
+            <i class="fas fa-hammer fa-spin fa-fw fa-2x"></i>
+        </div>
+        <div id="crafting-progress-bar-container" style="width: 200px; height: 20px; background-color: #555; border-radius: 5px; margin: 0 auto 10px auto; border: 1px solid #777; overflow: hidden;">
+            <div id="crafting-progress-bar" style="width: 0%; height: 100%; background-color: #4CAF50; transition: width 0.1s linear;"></div>
+        </div>
+        <div id="crafting-progress-text" style="font-size: 0.9em;">Forging ${targetData.name}...</div>
+      `;
       document.body.appendChild(loadingIndicatorElement);
+      const progressBar = loadingIndicatorElement.querySelector(
+        "#crafting-progress-bar"
+      );
+      const progressText = loadingIndicatorElement.querySelector(
+        "#crafting-progress-text"
+      );
 
+      // ... (Quantity and material consumption logic - remains the same) ...
       let quantityCrafted = 0;
-      let consumptionResult;
+      let consumeFiftyPercentChance = false;
       if (successDegree === 3) {
-        consumptionResult = calculateMaterialConsumption(materialsUsed, true);
-        const maxPossibleQty =
-          targetData.priceGP > 0
-            ? Math.floor(valueUsed / targetData.priceGP)
-            : 1;
+        chatMessageColor = this.styles.successColor;
         quantityCrafted = Math.max(
           1,
-          Math.min(
-            maxPossibleQty,
-            Math.floor(valueUsed / (targetData.priceGP / 2))
-          )
+          targetData.priceGP > 0
+            ? Math.floor(valueUsed / (targetData.priceGP / 2))
+            : 1
         );
-        outcomeMessage = `Critical Success! Crafted ${quantityCrafted}x ${targetData.name}.`;
+        outcomeMessage = `<strong>Critical Success!</strong> Crafted ${quantityCrafted}x ${targetData.name}.`;
+        consumeFiftyPercentChance = true;
       } else if (successDegree === 2) {
-        consumptionResult = calculateMaterialConsumption(materialsUsed, false);
-        const maxPossibleQty =
+        chatMessageColor = this.styles.successColor;
+        quantityCrafted = Math.max(
+          1,
           targetData.priceGP > 0
             ? Math.floor(valueUsed / targetData.priceGP)
-            : 1;
-        quantityCrafted = Math.max(1, maxPossibleQty);
-        outcomeMessage = `Success! Crafted ${quantityCrafted}x ${targetData.name}.`;
+            : 1
+        );
+        outcomeMessage = `<strong>Success!</strong> Crafted ${quantityCrafted}x ${targetData.name}.`;
+        consumeFiftyPercentChance = false;
       } else if (successDegree === 1) {
-        consumptionResult = calculateMaterialConsumption(materialsUsed, true);
-        quantityCrafted = 0;
-        outcomeMessage = `Failure. No items crafted.`;
+        chatMessageColor = this.styles.failureColor;
+        outcomeMessage = `<strong>Failure.</strong> No items crafted.`;
+        consumeFiftyPercentChance = true;
       } else {
-        consumptionResult = calculateMaterialConsumption(materialsUsed, false);
-        quantityCrafted = 0;
-        outcomeMessage = `Critical Failure! All materials ruined.`;
+        chatMessageColor = this.styles.failureColor;
+        outcomeMessage = `<strong>Critical Failure!</strong> All materials ruined.`;
+        consumeFiftyPercentChance = false;
       }
-      consumedMaterials = consumptionResult.consumptionDetails;
-      totalUnitsConsumed = consumptionResult.totalUnitsConsumed;
-      totalUnitsSaved = consumptionResult.totalUnitsSaved;
-      const timeInfo =
-        quantityCrafted > 0
-          ? `\nTime: ${timeStringPerItem}.`
-          : `\nTime Wasted: ${timeStringPerItem}.`;
-      const materialInfo = `Materials: ${
-        totalUnitsConsumed > 0
-          ? `Consumed/Ruined ${totalUnitsConsumed} unit(s).`
-          : ""
-      } ${
-        totalUnitsSaved > 0 ? `Kept/Saved ${totalUnitsSaved} unit(s).` : ""
-      }`.trim();
-      outcomeMessage += `${timeInfo} ${materialInfo}`;
 
-      if (consumedMaterials.length > 0) {
+      const { consumptionDetails, totalUnitsConsumed, totalUnitsSaved } =
+        this._calculateMaterialConsumptionDetails(
+          materialsUsed,
+          consumeFiftyPercentChance
+        );
+      if (consumptionDetails.length > 0) {
         const materialUpdates = [];
         const materialDeletions = [];
-        for (const detail of consumedMaterials) {
+        for (const detail of consumptionDetails) {
           const item = actor.items.get(detail.id);
-          if (!item) {
-            continue;
-          }
+          if (!item) continue;
           const currentQty = item.system.quantity ?? 1;
           if (currentQty > detail.quantityToConsume) {
             materialUpdates.push({
@@ -2111,261 +2193,319 @@ class SimplifiedCraftingModule {
             materialDeletions.push(detail.id);
           }
         }
-        try {
-          if (materialUpdates.length > 0) {
-            await actor.updateEmbeddedDocuments("Item", materialUpdates);
-          }
-          if (materialDeletions.length > 0) {
-            await actor.deleteEmbeddedDocuments("Item", materialDeletions);
-          }
-        } catch (e) {
-          ui.notifications.error(
-            "Error updating material quantities. Check console."
-          );
-          outcomeMessage += `\n<strong style="color:orange;">Warn: Error consuming materials!</strong>`;
-        }
-      } else {
+        if (materialUpdates.length > 0)
+          await actor.updateEmbeddedDocuments("Item", materialUpdates);
+        if (materialDeletions.length > 0)
+          await actor.deleteEmbeddedDocuments("Item", materialDeletions);
       }
+      outcomeMessage += `\nTime: ${timeStringPerItem}.`;
+      outcomeMessage += `\nMaterials: ${
+        totalUnitsConsumed > 0
+          ? `Consumed/Ruined ${totalUnitsConsumed} unit(s).`
+          : "No units consumed."
+      }${totalUnitsSaved > 0 ? ` Kept/Saved ${totalUnitsSaved} unit(s).` : ""}`;
 
-      let itemsToCreateSourceData = [];
+
+      // --- Item Creation ---
+      let tempCreatedDoc = null;
+      // --- DEFINE finalCraftedName HERE ---
+      let finalCraftedName = ""; // Initialize
+
       if (quantityCrafted > 0) {
         if (!targetItemUuid) {
-          outcomeMessage += `\n<strong style="color:red;">Error: Missing target item UUID!</strong>`;
+          outcomeMessage += `\n<strong style="color:red;">Error: Missing target item UUID for creation!</strong>`;
+          console.error(`${this.moduleId} | ITEM CREATION FAILED: Missing targetItemUuid.`);
         } else {
           try {
             const sourceItem = await fromUuid(targetItemUuid);
-            if (sourceItem?.isOfType("physical")) {
+         if (sourceItem?.isOfType("physical")) {
               const itemSource = sourceItem.toObject(false);
-              itemSource.system.quantity = 1;
               delete itemSource._id;
-              itemsToCreateSourceData = Array(quantityCrafted)
-                .fill(0)
-                .map(() => deepClone(itemSource));
+              itemSource.system.quantity = quantityCrafted;
+
+              // ... (finalCraftedName calculation) ...
+              const baseNameFromFormula = targetData.name || sourceItem.name || "Crafted Item";
+              const craftSuffix = `(Crafted by ${crafterName})`;
+              if (baseNameFromFormula && !baseNameFromFormula.endsWith(craftSuffix)) {
+                finalCraftedName = `${baseNameFromFormula} ${craftSuffix}`;
+              } else if (baseNameFromFormula) {
+                finalCraftedName = baseNameFromFormula;
+              } else {
+                finalCraftedName = `Unknown Crafted Item ${craftSuffix}`;
+              }
+
+              itemSource.name = finalCraftedName;
+              itemSource.img = sourceItem.img || targetData.icon;
+
+              // --- ROBUST IDENTIFICATION BLOCK ---
+              itemSource.system.identification = {
+                status: "identified",
+                identified: {
+                  name: finalCraftedName,
+                  img: itemSource.img,
+                  // Ensure 'data' and 'data.description' objects exist
+                  data: {
+                    description: {
+                      value: sourceItem.system.description?.value || "" // Get value if possible, else empty string
+                    }
+                  }
+                },
+                unidentified: {
+                  name: `Unidentified ${sourceItem.type || "Item"}`,
+                  img: "icons/svg/mystery-man.svg",
+                  // Ensure 'data' and 'data.description' objects exist
+                  data: {
+                    description: {
+                      value: "<p>This item has just been crafted.</p>" // Default unidentified description
+                    }
+                  }
+                },
+                misidentifiedData: null
+              };
+              // --- END ROBUST IDENTIFICATION BLOCK ---
+
+
+                         const newSystemData = foundry.utils.deepClone(sourceItem.system);
+
+              // Merge our specific changes (quantity, identification) into the cloned system data
+              // This order ensures our `identification` object overwrites any from sourceItem.system
+              itemSource.system = {
+                  ...newSystemData, // Spread all properties from the original system
+                  quantity: quantityCrafted, // Our specific quantity
+                  identification: itemSource.system.identification // Our carefully constructed identification block
+                  // Note: itemSource.name and itemSource.img are top-level, not in itemSource.system
+              };
+              // If `sourceItem.system` itself could be undefined (very unlikely for a valid item):
+              // itemSource.system = {
+              //    ...(sourceItem.system || {}), // Spread empty obj if sourceItem.system is undefined
+              //    quantity: quantityCrafted,
+              //    identification: itemSource.system.identification
+              // };
+
+
+              console.log(`${this.moduleId} | Prepared itemSource for creation:`, foundry.utils.deepClone(itemSource)); // Log the full source
+
+              const createdItemsArray = await actor.createEmbeddedDocuments("Item", [itemSource]);
+              
+              if (createdItemsArray && createdItemsArray.length > 0) {
+                tempCreatedDoc = createdItemsArray[0];
+              } else {
+                outcomeMessage += `\n<strong style="color:red;">Error: Item creation process yielded no documents.</strong>`;
+              }
             } else {
-              outcomeMessage += `\n<strong style="color:red;">Error: Source item is not a physical item or invalid.</strong>`;
+              outcomeMessage += `\n<strong style="color:red;">Error: Source item (UUID: ${targetItemUuid}) is not physical or invalid.</strong>`;
             }
           } catch (loadError) {
-            outcomeMessage += `\n<strong style="color:red;">Error: Failed loading source item data from UUID.</strong>`;
+            outcomeMessage += `\n<strong style="color:red;">Error loading/processing source item ${targetItemUuid}: ${loadError.message}</strong>`;
+            console.error(`${this.moduleId} | ITEM CREATION FAILED for ${targetItemUuid}:`, loadError);
           }
-        }
-      }
-
-      if (itemsToCreateSourceData.length > 0) {
-        try {
-          createdDocs = await actor.createEmbeddedDocuments(
-            "Item",
-            itemsToCreateSourceData
-          );
-          if (!createdDocs || createdDocs.length === 0) {
-            throw new Error(
-              "createEmbeddedDocuments resolved but returned no documents."
-            );
-          }
-          createdDocs = Array.isArray(createdDocs)
-            ? createdDocs
-            : [createdDocs];
-        } catch (e) {
-          ui.notifications.error(
-            `Craft Error: Failed to create item(s) in inventory. Check console.`
-          );
-          outcomeMessage += `\n<strong style="color:red;">Error: Failed to add created item(s) to inventory!</strong>`;
-          createdDocs = [];
         }
       } else {
+        console.log(`${this.moduleId} | Quantity to craft is 0. No item creation attempted.`);
       }
 
-      let itemLinkForChat = null;
-      if (createdDocs.length > 0) {
-        const updatePayloads = [];
+
+      // --- 7. Item Modification (Name, Description) and UI Refresh ---
+      let itemLinkForChat = "";
+      const createdDocOnActor = tempCreatedDoc ? actor.items.get(tempCreatedDoc.id) : null;
+
+    
+      if (createdDocOnActor instanceof Item && createdDocOnActor.id) {
         const materialListString =
-          materialsUsed.map((m) => `${m.name} x${m.quantity}`).join(", ") ||
+          materialsUsed.map((m) => `${m.name} (x${m.quantity})`).join(", ") ||
           "various materials";
-        const descriptionAddition = `<hr><p><em>Item crafted by ${crafterName} using: ${materialListString}.</em></p>`;
 
-        for (const doc of createdDocs) {
-          if (doc instanceof Item && doc.id) {
-            const originalName = doc.name ?? "Unnamed Crafted Item";
-            const currentDescription = doc.system.description?.value ?? "";
-            let nameToUpdate = `${originalName} (Crafted by ${crafterName})`;
-            let namePath = "name";
-            if (doc.system?.details?.value !== undefined) {
-              namePath = "system.details.value";
-              nameToUpdate = `${doc.system.details.value} (Crafted by ${crafterName})`;
-            }
-
-            updatePayloads.push({
-              _id: doc.id,
-              [namePath]: nameToUpdate,
-              "system.description.value":
-                currentDescription + descriptionAddition,
-            });
-          } else {
-          }
-        }
-
-        if (updatePayloads.length > 0) {
-          const firstItemIdToUpdate = updatePayloads[0]._id;
-          await new Promise((resolve) => setTimeout(resolve, 2000));
-
-          let currentActorState = game.actors.get(actor.id);
-          if (!currentActorState) {
-            outcomeMessage += `\n<strong style="color:red;">Error: Actor not found before update.</strong>`;
-          } else {
+        let gameDateTimeString = "";
+        const simpleCalendarActive = game.modules.get("foundryvtt-simple-calendar")?.active;
+        if (simpleCalendarActive && typeof SimpleCalendar !== "undefined" && SimpleCalendar.api) {
             try {
-              const updateResult =
-                await currentActorState.updateEmbeddedDocuments(
-                  "Item",
-                  updatePayloads
-                );
-
-              await new Promise((resolve) => setTimeout(resolve, 500));
-
-              currentActorState = game.actors.get(actor.id);
-              if (!currentActorState) {
-                outcomeMessage += `\n<strong style="color:orange;">Warning: Could not verify update.</strong>`;
-              } else {
-                const verifiedItem =
-                  currentActorState.items.get(firstItemIdToUpdate);
-                if (verifiedItem) {
-                  let verifiedName = verifiedItem.name;
-                  if (verifiedItem.system?.details?.value !== undefined) {
-                    verifiedName = verifiedItem.system.details.value;
-                  }
-                  const nameUpdated = verifiedName.includes(
-                    `(Crafted by ${crafterName})`
-                  );
-                  const descUpdated =
-                    verifiedItem.system.description?.value?.includes(
-                      `Item crafted by ${crafterName}`
-                    );
-
-                  if (nameUpdated && descUpdated) {
-                    itemLinkForChat = `@UUID[${createdDocs[0].uuid}]{${verifiedName}}`;
-                  } else {
-                    itemLinkForChat = `@UUID[${createdDocs[0].uuid}]{${verifiedName}}`;
-                  }
-                } else {
-                  itemLinkForChat = `@UUID[${createdDocs[0].uuid}]{${createdDocs[0].name}} (Verification Failed)`;
+                const scCurrentDateTime = SimpleCalendar.api.currentDateTime();
+                const formatString = "MMMM Do, YYYY, HH:mm";
+                gameDateTimeString = SimpleCalendar.api.formatDateTime(scCurrentDateTime, formatString);
+                if (!gameDateTimeString || gameDateTimeString.toLowerCase().includes("invalid")) {
+                    const display = SimpleCalendar.api.currentDateTimeDisplay?.();
+                    gameDateTimeString = (display && display.date && display.time) ? `${display.date}, ${display.time}` : new Date().toLocaleString();
                 }
-              }
-            } catch (updateError) {
-              ui.notifications.error(
-                "Error updating crafted item details. Check console."
-              );
-              outcomeMessage += `\n<strong style="color:red;">Error: Failed updating item details!</strong>`;
-              itemLinkForChat = `@UUID[${createdDocs[0].uuid}]{${createdDocs[0].name}} (Update Exception)`;
+            } catch (scError) { gameDateTimeString = new Date().toLocaleString(); }
+        } else { gameDateTimeString = new Date().toLocaleString(); }
+
+        const nameForUpdate = finalCraftedName; // Assumes finalCraftedName is correctly defined from creation block
+
+        // --- DETAILED DESCRIPTION DEBUGGING ---
+        console.log(`${this.moduleId} | --- Preparing Description Update for: ${createdDocOnActor.name} (ID: ${createdDocOnActor.id}) ---`);
+        console.log(`${this.moduleId} | Crafter: ${crafterName}, DateTime: ${gameDateTimeString}, Materials: ${materialListString}`);
+
+        let baseDescription = createdDocOnActor.system.description?.value ?? "";
+        console.log(`${this.moduleId} | 1. Initial baseDescription from createdDoc:`, JSON.stringify(baseDescription));
+
+        // Regex to find and remove a previously added crafting marker to prevent duplication
+        const craftMarkerRegex = /<hr>\s*<p>\s*<em>Item crafted by.*?<\/em>\s*<\/p>/si;
+        if (craftMarkerRegex.test(baseDescription)) {
+            console.log(`${this.moduleId} | Found existing craft marker. Removing it.`);
+            baseDescription = baseDescription.replace(craftMarkerRegex, "").trim();
+            // If trimming leaves an empty string or just whitespace, make it truly empty
+            if (baseDescription.match(/^\s*$/)) {
+                baseDescription = "";
             }
-          }
-        } else {
-          itemLinkForChat = createdDocs[0]
-            ? `@UUID[${createdDocs[0].uuid}]{${createdDocs[0].name}} (No Update Payload)`
-            : "Crafted Item (Link Error)";
+            // Remove any trailing <hr> or <br> that might be left after removing the marker
+            baseDescription = baseDescription.replace(/<(hr|br)\s*\/?>\s*$/i, "").trim();
         }
-      } else if (quantityCrafted > 0) {
-        outcomeMessage += `\n<strong style="color:red;">(Item creation failed or produced no documents)</strong>`;
+        console.log(`${this.moduleId} | 2. baseDescription after potential cleaning:`, JSON.stringify(baseDescription));
+
+        const craftInfoHtml = `<hr><p><em>Item crafted by ${crafterName} on ${gameDateTimeString} using: ${materialListString}.</em></p>`;
+        console.log(`${this.moduleId} | 3. craftInfoHtml to append:`, JSON.stringify(craftInfoHtml));
+
+        let descriptionWithAddition;
+        if (baseDescription) {
+            // Check if baseDescription already ends with a closing p tag or an hr/br to avoid awkward concatenation
+            if (baseDescription.match(/<\/(p|div|ul|ol)>$|<\/(li)>$|<(hr|br)\s*\/?>$/i)) {
+                descriptionWithAddition = baseDescription + craftInfoHtml; // Append directly
+            } else {
+                descriptionWithAddition = baseDescription + "\n" + craftInfoHtml; // Add a newline before HR if not ending with block
+            }
+        } else {
+            // If baseDescription is empty, remove the leading <hr> from craftInfoHtml as it's not separating anything.
+            descriptionWithAddition = craftInfoHtml.replace(/^<hr>/, '').trim();
+        }
+        console.log(`${this.moduleId} | 4. Final descriptionWithAddition for update:`, JSON.stringify(descriptionWithAddition));
+        // --- END DETAILED DESCRIPTION DEBUGGING ---
+
+        const updateData = {
+          name: nameForUpdate,
+          "system.description.value": descriptionWithAddition, 
+          "system.identification.status": "identified",
+          "system.identification.identified.name": nameForUpdate,
+          "system.identification.identified.img": createdDocOnActor.img,
+          [`flags.${this.moduleId}.craftedTimestamp`]: Date.now(),
+        };
+        
+        if (!createdDocOnActor.system.identification.unidentified) {
+            updateData["system.identification.unidentified"] = {
+                name: `Unidentified ${createdDocOnActor.type || "Item"}`,
+                img: "icons/svg/mystery-man.svg",
+                data: { description: { value: "" } }
+            };
+        }
+
+        console.log(`${this.moduleId} | Update Data being sent:`, foundry.utils.deepClone(updateData));
+
+        try {
+          await createdDocOnActor.update(updateData);
+          console.log(`${this.moduleId} | Item update promise resolved for ${createdDocOnActor.id}.`);
+          
+          await new Promise(resolve => setTimeout(resolve, 100)); 
+
+          const finalUpdatedItemOnActor = actor.items.get(createdDocOnActor.id);
+
+          if (finalUpdatedItemOnActor) {
+            console.log(`${this.moduleId} | Fetched finalUpdatedItemOnActor. Name: ${finalUpdatedItemOnActor.name}`);
+            console.log(`${this.moduleId} | Description on finalUpdatedItemOnActor:`, JSON.stringify(finalUpdatedItemOnActor.system.description?.value));
+            console.log(`${this.moduleId} | Does it include crafterName '${crafterName}'?`, finalUpdatedItemOnActor.system.description?.value.includes(crafterName));
+            
+            itemLinkForChat = `@UUID[${finalUpdatedItemOnActor.uuid}]{${finalUpdatedItemOnActor.name}}`;
+
+            if (actor.sheet?.rendered) {
+              console.log(`${this.moduleId} | Forcing sheet refresh for actor ${actor.name}`);
+              // actor.sheet.actor = game.actors.get(actor.id); // Re-assigning actor might not be necessary if data model is reactive
+              actor.sheet.render(true, { focus: false });
+            }
+          } else {
+            console.error(`${this.moduleId} | Item ${createdDocOnActor.id} NOT FOUND on actor after its own update() method and pause.`);
+            itemLinkForChat = `@UUID[${createdDocOnActor.uuid}]{${nameForUpdate}} (Final Verification Failed)`;
+          }
+        } catch (updateError) {
+          console.error(`${this.moduleId} | Error during createdDocOnActor.update():`, updateError);
+          outcomeMessage += `\n<strong style="color:red;">Error updating final item details: ${updateError.message}</strong>`;
+          itemLinkForChat = `@UUID[${createdDocOnActor.uuid}]{${createdDocOnActor.name}} (Final Update Exception)`; // Use current name if update fails
+        }
+        if (itemLinkForChat) outcomeMessage += `\nCreated & Modified: ${itemLinkForChat}`;
+      } 
+      
+      
+      else if 
+    (quantityCrafted > 0) {
+        // This case means item creation might have failed or tempCreatedDoc wasn't found on actor
+        console.error(`${this.moduleId} | Item modification skipped. 'createdDocOnActor' not valid. tempCreatedDoc ID: ${tempCreatedDoc?.id}`);
+        if (!outcomeMessage.includes("Error:")) {
+          outcomeMessage += `\n<strong style="color:red;">(Internal Error: Crafted item not found on actor for final modifications.)</strong>`;
+        }
       }
 
-      if (itemLinkForChat) {
-        outcomeMessage += `\nCreated: ${itemLinkForChat}`;
-      }
-      const finalOutcomeMessage =
-        outcomeMessage || "<strong style='color:red;'>Outcome Error</strong>";
+      // ... (Progress bar animation and cleanup - remains the same) ...
+      let totalDurationMs = Math.max(1000, valueUsed * 100);
+      if (quantityCrafted === 0) { totalDurationMs = 2000; }
+      const startTime = performance.now();
+      const animateProgress = (timestamp) => {
+        const elapsedTime = timestamp - startTime;
+        let progressPercentage = Math.min(100, (elapsedTime / totalDurationMs) * 100);
+        if (progressBar) progressBar.style.width = `${progressPercentage}%`;
+        if (elapsedTime < totalDurationMs) {
+          animationFrameId = requestAnimationFrame(animateProgress);
+        } else {
+          if (progressBar) progressBar.style.width = "100%";
+          if (progressText && loadingIndicatorElement) {
+            progressText.innerHTML = `<i class="fas ${quantityCrafted > 0 ? 'fa-check-circle' : 'fa-times-circle'} fa-fw" style="color: ${chatMessageColor};"></i> ${quantityCrafted > 0 ? 'Crafting Complete!' : (successDegree === 0 ? 'Materials Ruined!' : 'Process Failed.')}`;
+          }
+          setTimeout(() => {
+            if (loadingIndicatorElement) loadingIndicatorElement.remove();
+            loadingIndicatorElement = null;
+            if (soundInstance) soundInstance.stop().then(() => (soundInstance = null));
+          }, quantityCrafted > 0 ? 1500 : 1000);
+        }
+      };
+      animationFrameId = requestAnimationFrame(animateProgress);
+      await new Promise((resolve) => setTimeout(resolve, totalDurationMs));
 
-      await new Promise((resolve) => setTimeout(resolve, 1500));
+      // ... (Chat message creation - remains the same, ensure it uses the final name from itemLinkForChat or createdDocOnActor.name) ...
+      const materialListDisplay = materialsUsed.length > 0 ? materialsUsed.map((m) => `${m.name} x${m.quantity}`).join(", ") : "None selected";
+      const targetItemDisplayLink = targetItemUuid ? `@UUID[${targetItemUuid}]{${targetData.name}}` : targetData.name;
+      const finalChatMessage = `
+        <div class="pf2e chat-card" style="padding: 5px; border: 2px solid ${chatMessageColor}; border-radius: 5px; font-size: 14px; background-color: rgba(0,0,0,0.03);">
+          <header class="card-header flexrow">
+            <img src="${actor.img}" title="${actor.name}" width="36" height="36" style="border: none; margin-right: 5px;">
+            <img src="${targetData.icon}" title="${targetData.name}" width="36" height="36" style="border: none; margin-right: 5px;">
+            <h3 style="flex-grow: 1; margin: 0; line-height: 36px; color: ${chatMessageColor};">
+              Craft: ${targetItemDisplayLink}
+            </h3>
+          </header>
+          <div class="card-content" style="font-size: 0.95em;">
+            <p style="margin: 2px 0;"><strong>Crafter:</strong> ${actor.name}</p>
+            <p style="margin: 2px 0;"><strong>Formula:</strong> ${targetData.name}</p>
+            <p style="margin: 2px 0;"><strong>Materials Used (Value: ${valueUsed.toFixed(2)}gp / Req: ${requiredValue.toFixed(2)}gp):</strong> ${materialListDisplay}</p>
+            <p style="margin: 2px 0;"><strong>Craft DC:</strong> ${baseDC ?? "?"}</p>
+            <p style="margin: 2px 0;"><strong>Roll Result:</strong> ${roll?.total ?? "?"} vs DC ${baseDC ?? "?"} (<strong style="color: ${chatMessageColor};">${rollOutcomeText || "No Roll"}</strong>)</p>
+            <hr style="margin: 5px 0;">
+            <p style="margin: 2px 0; white-space: pre-wrap;">${outcomeMessage}</p>
+            <p style="font-size:0.9em; color: #555; margin-top: 5px;"><em>GM Note: Verify material appropriateness and time tracking for overall task. Base time/item: ${timeStringPerItem}.</em></p>
+          </div>
+        </div>`;
 
-      if (soundInstance) {
-        await soundInstance.stop();
-        soundInstance = null;
-      }
-      if (loadingIndicatorElement) {
-        loadingIndicatorElement.remove();
-        loadingIndicatorElement = null;
-      }
+      ChatMessage.create({
+        user: game.user.id,
+        speaker: ChatMessage.getSpeaker({ actor: actor }),
+        content: finalChatMessage,
+        roll: roll.toJSON(),
+        flags: {
+          "pf2e.origin": { type: "skill", uuid: craftSkill?.item?.uuid, slug: craftSkill?.slug },
+          core: { canPopout: true },
+        },
+      });
 
-      const materialListDisplay =
-        materialsUsed.length > 0
-          ? materialsUsed.map((m) => `${m.name} x${m.quantity}`).join(", ")
-          : "None selected";
-      const targetItemLink = targetItemUuid
-        ? `@UUID[${targetItemUuid}]{${targetData.name}}`
-        : targetData.name;
-      const formulaName =
-        targetData.name ?? targetItemUuid ?? "Unknown Formula";
-
-      finalChatMessage = `<div class="pf2e chat-card" style="padding: 5px; border: 2px solid ${outcomeColor}; border-radius: 5px; font-size: 14px; background-color: rgba(0,0,0,0.03);">
-                                <header class="card-header flexrow">
-                                    <img src="${actor.img}" title="${
-        actor.name
-      }" width="36" height="36" style="border: none; margin-right: 5px;">
-                                    <img src="${targetData.icon}" title="${
-        targetData.name
-      }" width="36" height="36" style="border: none; margin-right: 5px;">
-                                    <h3 style="flex-grow: 1; margin: 0; line-height: 36px; color: ${outcomeColor};">
-                                        Craft: ${targetItemLink}
-                                    </h3>
-                                </header>
-                                <div class="card-content" style="font-size: 0.95em;">
-                                    <p style="margin: 2px 0;"><strong>Crafter:</strong> ${
-                                      actor.name
-                                    }</p>
-                                    <p style="margin: 2px 0;"><strong>Formula:</strong> ${formulaName}</p>
-                                    <p style="margin: 2px 0;"><strong>Materials Used (Value: ${valueUsed.toFixed(
-                                      2
-                                    )}gp):</strong> ${materialListDisplay}</p>
-                                    <p style="margin: 2px 0;"><strong>Craft DC:</strong> ${
-                                      baseDC ?? "?"
-                                    }</p>
-                                    <p style="margin: 2px 0;"><strong>Time/Item:</strong> ${timeStringPerItem}</p>
-                                    <p style="margin: 2px 0;"><strong>Roll Result:</strong> ${
-                                      rollTotal ?? "?"
-                                    } vs DC ${
-        baseDC ?? "?"
-      } (<strong style="color: ${outcomeColor};">${
-        rollOutcomeText || "No Roll"
-      }</strong>)</p>
-                                    <hr style="margin: 5px 0;">
-                                    <p style="margin: 2px 0; white-space: pre-wrap;"><strong>Outcome:</strong> ${finalOutcomeMessage}</p>
-                                    <p style="font-size:0.9em; color: #555; margin-top: 5px;"><em>GM Note: Verify material appropriateness and time tracking.</em></p>
-                                </div>
-                            </div>`;
-
-      try {
-        await ChatMessage.create({
-          user: game.user.id,
-          speaker: ChatMessage.getSpeaker({ actor: actor }),
-          content: finalChatMessage,
-          sound: null,
-          flags: {
-            "pf2e.origin": {
-              type: "skill",
-              uuid: craftSkill?.item?.uuid,
-              slug: craftSkill?.slug,
-            },
-          },
-        });
-      } catch (chatError) {
-        ui.notifications.error("Failed to send crafting result to chat.");
-      }
     } catch (error) {
-      ui.notifications.error(
-        "A critical crafting error occurred. Check the console (F12) for details."
-      );
-      outcomeMessage = outcomeMessage ? `${outcomeMessage}\n` : "";
-      outcomeMessage += `<strong style="color:red;">Critical Error during processing: ${error.message}</strong>`;
-      if (soundInstance) {
-        await soundInstance.stop();
-        soundInstance = null;
-      }
-      if (loadingIndicatorElement) {
-        loadingIndicatorElement.remove();
-        loadingIndicatorElement = null;
-      }
+      console.error(`${this.moduleId} | CRITICAL CRAFTING ERROR for ${targetData.name}:`, error);
+      ui.notifications.error(`A critical error occurred while crafting ${targetData.name}. Check console (F12).`);
+      if (animationFrameId) cancelAnimationFrame(animationFrameId);
+      if (loadingIndicatorElement) loadingIndicatorElement.remove();
+      if (soundInstance) await soundInstance.stop();
+      ChatMessage.create({
+        user: game.user.id,
+        speaker: ChatMessage.getSpeaker({ alias: "System Error" }),
+        content: `<b>${this.moduleId} ERROR:</b> A critical error occurred while ${crafterName} was crafting ${targetData.name}. Error: ${error.message}.`,
+        whisper: ChatMessage.getWhisperRecipients("GM").map((u) => u.id),
+      });
     } finally {
-      if (soundInstance) {
-        await soundInstance.stop();
-      }
-      if (loadingIndicatorElement) {
-        loadingIndicatorElement.remove();
+      if (animationFrameId && !loadingIndicatorElement) {
+        cancelAnimationFrame(animationFrameId);
       }
     }
   }
@@ -3155,12 +3295,11 @@ class SimplifiedCraftingModule {
     if (craftTab.length > 0) {
       try {
         const allActorFeats = actor.itemTypes.feat;
-        
-        const relevantFeats = allActorFeats.filter((feat, index) =>
-          // only take the _first_ matching feat to ensure uniqueness
-          this.CRAFTING_FEAT_SLUGS.has(feat.slug) && allActorFeats.indexOf(feat) === index
+
+        const relevantFeats = allActorFeats.filter((feat) =>
+          this.CRAFTING_FEAT_SLUGS.has(feat.slug)
         );
-          
+
         relevantFeats.sort((a, b) => a.name.localeCompare(b.name));
 
         let featListHtml = "";
@@ -3339,13 +3478,64 @@ class SimplifiedCraftingModule {
     } else {
     }
   }
+
+// Inside your SimplifiedCraftingModule class
+
   initialize() {
-    Hooks.once("ready", () => {});
+    Hooks.once("ready", () => {
+      // Other ready tasks...
+      this.registerChatListeners();
+    });
 
     Hooks.on("renderCharacterSheetPF2e", (app, html) =>
       this.onRenderCharacterSheet(app, html)
     );
+    // Other hooks...
   }
+
+  registerChatListeners() {
+    // Ensure this listener is only active for GMs to prevent errors/abuse
+    if (!game.user.isGM) {
+      return;
+    }
+
+    Hooks.on('renderChatMessage', (chatMessage, html, messageData) => {
+        // Check if the message was flagged by your module as a time advance suggestion
+        if (chatMessage.flags && chatMessage.flags[this.moduleId]?.type === 'timeAdvanceSuggestion') {
+            const advanceSCButton = html.find(`button[data-action="module-advance-sc-time"]`);
+            if (advanceSCButton.length) {
+                advanceSCButton.on('click', (event) => {
+                    const button = event.currentTarget;
+                    const timeData = {
+                        hour: parseInt(button.dataset.hours),
+                        minute: parseInt(button.dataset.minutes),
+                        second: parseInt(button.dataset.seconds),
+                        reason: button.dataset.reason
+                    };
+                    this._gmAdvanceSimpleCalendarTime(timeData);
+                    // Optionally disable or change the button after click
+                    $(button).text('SC Time Advanced').prop('disabled', true);
+                });
+            }
+
+            const advanceCoreButton = html.find(`button[data-action="module-advance-core-time"]`);
+            if (advanceCoreButton.length) {
+                advanceCoreButton.on('click', (event) => {
+                    const button = event.currentTarget;
+                    const timeData = {
+                        seconds: parseInt(button.dataset.seconds),
+                        reason: button.dataset.reason
+                    };
+                    this._gmAdvanceCoreTime(timeData);
+                    $(button).text('Core Time Advanced').prop('disabled', true);
+                });
+            }
+        }
+    });
+  }
+
+
+
 }
 
 try {
