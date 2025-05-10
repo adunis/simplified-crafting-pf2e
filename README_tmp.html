@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>README.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="simplified-crafting-pf2e">Simplified Crafting PF2e</h1>
+<p><a href="https://foundryvtt.com/"><img src="https://img.shields.io/badge/Foundry%20Version-v10%2B-informational" alt="Foundry Core Compatible Version"></a>
+<a href="https://foundryvtt.com/packages/pf2e"><img src="https://img.shields.io/badge/PF2e%20System-4.x%2B-success" alt="PF2e System Compatible Version"></a></p>
+<!-- Optional: Add License Badge e.g., [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) -->
+<!-- Optional: Add Manifest Link Badge e.g., [![Forge Installs](https://img.shields.io/badge/Forge%20Installs- %25/%25-red?style=plastic&logo=forge-vtt)](https://forge-vtt.com/bazaar#package=simplified-crafting-pf2e) -->
+<p>A module for the Pathfinder 2e system on Foundry VTT that modifies and enhances the crafting, identification, and reverse engineering processes.</p>
+<h2 id="overview">Overview</h2>
+<p>This module aims to streamline certain aspects of item interaction in PF2e campaigns running on Foundry VTT. It provides:</p>
+<ol>
+<li><strong>Simplified Crafting:</strong> Intercepts the standard crafting process with a custom material selection dialog and outcome handling based on the crafting check.</li>
+<li><strong>Enhanced Identification:</strong> Adds a dedicated workflow for identifying items, supporting different approaches (Detect Magic, Read Aura, Direct Skill Check) and specific identification feats. Includes a unique (and potentially dangerous!) outcome for critical identification failures.</li>
+<li><strong>Reverse Engineering:</strong> Introduces an action to attempt learning a formula by disassembling an existing item.</li>
+<li><strong>UI Enhancements:</strong> Modifies the Character Sheet's Inventory and Crafting tabs for better integration of these features.</li>
+</ol>
+<h2 id="features">Features</h2>
+<h3 id="1-simplified-crafting">1. Simplified Crafting</h3>
+<ul>
+<li><strong>Custom Workflow:</strong> Replaces the default &quot;Craft&quot; button action on the character sheet's Crafting tab for known formulas.</li>
+<li><strong>Material Selection:</strong> Opens a dialog allowing the player to select specific items from their inventory to use as materials.
+<ul>
+<li>Calculates the total value of selected materials.</li>
+<li>Requires materials worth at least half the item's Price.</li>
+<li>Shows potential quantity based on value (for estimation only).</li>
+<li>Warns if the item is <code>magical</code> and requires appropriate components (GM discretion).</li>
+</ul>
+</li>
+<li><strong>Time Calculation:</strong> Automatically calculates the estimated crafting time per item based on the target item's level and the character's Crafting proficiency rank.</li>
+<li><strong>Crafting Check:</strong> Prompts the standard PF2e skill check dialog for Crafting against the item's DC (or a calculated DC if none is specified).</li>
+<li><strong>Outcome Handling:</strong>
+<ul>
+<li><strong>Critical Success:</strong> Crafts item(s) (potentially multiple based on value provided vs. cost). Consumes roughly 50% of the selected materials (random chance per unit).</li>
+<li><strong>Success:</strong> Crafts item(s) (based on value provided vs. cost). Consumes 100% of the selected materials.</li>
+<li><strong>Failure:</strong> Crafts nothing. Consumes roughly 50% of the selected materials.</li>
+<li><strong>Critical Failure:</strong> Crafts nothing. Consumes 100% of the selected materials (ruined).</li>
+</ul>
+</li>
+<li><strong>Item Creation:</strong> Adds the successfully crafted item(s) to the actor's inventory. Appends <code>(Crafted by [Actor Name])</code> to the item name/details and adds a note about materials used to the description.</li>
+<li><strong>Chat Message:</strong> Posts a detailed chat message summarizing the attempt, roll, materials, time, and outcome.</li>
+<li><strong>Sounds &amp; Effects:</strong> Plays sounds for success/failure and displays scrolling text over the token.</li>
+</ul>
+<h3 id="2-enhanced-identification">2. Enhanced Identification</h3>
+<ul>
+<li><strong>Identify Button:</strong> Adds an &quot;Identify Magic Items&quot; button to the Inventory tab controls.</li>
+<li><strong>Identification Workflow:</strong>
+<ul>
+<li>Presents options: Detect Magic, Read Aura, or Identify Directly.</li>
+<li>Supports identifying items across selected tokens or the user's character.</li>
+</ul>
+</li>
+<li><strong>Scanning (Detect/Read Aura):</strong>
+<ul>
+<li>Simulates scanning items one by one (with sound effects).</li>
+<li>Automatically identifies non-magical items.</li>
+<li>Optionally reveals magical aura presence (Detect) or aura + school(s) (Read Aura).</li>
+<li>Presents remaining unidentified <em>magical</em> items for skill checks.</li>
+</ul>
+</li>
+<li><strong>Direct Identification:</strong> Skips scanning and presents <em>all</em> unidentified items for skill checks.</li>
+<li><strong>Skill Check Prompt:</strong>
+<ul>
+<li>Calculates the Identification DC based on the item's level and rarity (or uses item-specific DC).</li>
+<li>Prompts the user to choose an appropriate skill (Arcana, Nature, Occultism, Religion, plus Society or Crafting if relevant feats are present and requirements met).</li>
+<li>Displays the modifier for each available skill.</li>
+<li>Supports applying bonuses/effects from feats like <code>Oddity Identification</code>.</li>
+</ul>
+</li>
+<li><strong>Feat Support:</strong> Recognizes and applies effects/options for:
+<ul>
+<li><code>Scholastic Identification</code> (Use Society)</li>
+<li><code>Assured Identification</code> (Crit Fail becomes Fail)</li>
+<li><code>Quick Identification</code> (Reduces time)</li>
+<li><code>Crafter's Appraisal</code> (Use Crafting for magic items)</li>
+<li><code>Oddity Identification</code> (Conditional bonus)</li>
+</ul>
+</li>
+<li><strong>Outcome Handling:</strong>
+<ul>
+<li><strong>Critical Success / Success:</strong> Item becomes identified.</li>
+<li><strong>Failure:</strong> Item remains unidentified. A marker is added preventing the <em>same actor</em> from retrying until they gain a level.</li>
+<li><strong>Critical Failure (Deceptive):</strong> This is a special, module-specific outcome:
+<ul>
+<li>The <em>original</em> item is secretly deleted from the actor's inventory.</li>
+<li>A <em>different</em>, randomly selected physical item (weapon, armor, equipment, consumable, etc.) from common compendiums is created in its place.</li>
+<li>To the <em>player</em>, the roll appears as a <strong>Success</strong>, and they see the <em>replacement</em> item as if it were correctly identified.</li>
+<li>The <em>GM</em> sees the true critical failure result in the chat log and a GM note is added to the <em>replacement</em> item detailing the original item and the misidentification.</li>
+<li><em>Note:</em> <code>Assured Identification</code> prevents this deceptive outcome, resulting in a normal Failure instead.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Chat Message:</strong> Posts a chat message (blind to GM by default, showing player outcome) detailing the attempt, skill used, roll result, and outcome (including deceptive status for GM).</li>
+<li><strong>Sounds &amp; Effects:</strong> Plays sounds for scanning and identification results.</li>
+</ul>
+<h3 id="3-reverse-engineering">3. Reverse Engineering</h3>
+<ul>
+<li><strong>Reverse Engineer Button:</strong> Adds a &quot;Reverse Engineer&quot; button to the Crafting tab controls.</li>
+<li><strong>Item Selection:</strong> Prompts the user to select a suitable item from their inventory to disassemble.
+<ul>
+<li>Suitable items are typically physical items (weapon, armor, equipment, consumable, treasure) that originate from a compendium (<code>sourceId</code> is present), are not artifacts, and whose formula is not already known by the actor.</li>
+</ul>
+</li>
+<li><strong>Reverse Engineering Check:</strong> Prompts a Crafting skill check against a calculated DC based on the item's level/rarity (or item-specific DC).</li>
+<li><strong>Outcome Handling:</strong>
+<ul>
+<li><strong>Critical Success:</strong> The actor learns the item's formula (added to their Crafting tab). The item is <strong>NOT</strong> destroyed.</li>
+<li><strong>Success:</strong> The actor learns the item's formula. The item <strong>IS</strong> destroyed.</li>
+<li><strong>Failure:</strong> The formula is not learned. The item <strong>IS</strong> destroyed.</li>
+<li><strong>Critical Failure:</strong> The formula is not learned. The item <strong>IS</strong> destroyed.</li>
+</ul>
+</li>
+<li><strong>Formula Management:</strong> Adds the learned formula's UUID to the actor's crafting entry.</li>
+<li><strong>Chat Message:</strong> Posts a chat message summarizing the attempt, roll, DC, and outcome, indicating if the formula was learned and if the item was destroyed.</li>
+<li><strong>Sounds &amp; Effects:</strong> Plays sounds for the attempt and result.</li>
+</ul>
+<h3 id="4-ui-enhancements">4. UI Enhancements</h3>
+<ul>
+<li><strong>Inventory Tab:</strong> Adds the &quot;Identify Magic Items&quot; button.</li>
+<li><strong>Crafting Tab:</strong>
+<ul>
+<li>Adds the &quot;Reverse Engineer&quot; button.</li>
+<li>Removes the core &quot;Toggle Free Crafting&quot; button.</li>
+<li>Removes the core quantity headers and inputs for formulas (as quantity is handled by material value).</li>
+<li>Adds a &quot;Relevant Crafting Feats&quot; section displaying the character's known crafting-related feats (from a predefined list in the code) with compendium links.</li>
+<li>Disables the craft button and adds a warning icon (<i class="fas fa-exclamation-triangle" style="color:red;"></i>) next to formulas that require <code>Magical Crafting</code> or <code>Alchemical Crafting</code> if the actor lacks the respective feat.</li>
+</ul>
+</li>
+</ul>
+<h2 id="installation">Installation</h2>
+<ol>
+<li>
+<p>Go to the Add-on Modules tab in the Foundry VTT setup screen.</p>
+</li>
+<li>
+<p>Click &quot;Install Module&quot;.</p>
+</li>
+<li>
+<p>In the &quot;Manifest URL&quot; field, paste the following link:</p>
+<p><code>https://github.com/adunis/simplified-crafting-pf2e/releases/latest/download/module.json</code></p>
+</li>
+<li>
+<p>Click &quot;Install&quot;.</p>
+</li>
+<li>
+<p>Enable the &quot;Simplified Crafting PF2e&quot; module in your World Settings.</p>
+</li>
+</ol>
+<h2 id="usage">Usage</h2>
+<ul>
+<li><strong>Crafting:</strong> Navigate to the &quot;Crafting&quot; tab on the character sheet. Find a known formula. Click the <i class="fas fa-hammer"></i> (Craft) button next to it. Select materials in the dialog and click &quot;Attempt Craft&quot;.</li>
+<li><strong>Identification:</strong> Navigate to the &quot;Inventory&quot; tab. Click the &quot;Identify Magic Items&quot; button in the controls area. Choose your approach (Detect, Read, Direct) and follow the prompts to select items and perform skill checks.</li>
+<li><strong>Reverse Engineering:</strong> Navigate to the &quot;Crafting&quot; tab. Click the &quot;Reverse Engineer&quot; button in the controls area above the formulas list. Select an item from the dropdown and click &quot;Attempt&quot;.</li>
+</ul>
+<h2 id="compatibility">Compatibility</h2>
+<ul>
+<li><strong>Required System:</strong> Pathfinder 2e (PF2e) - Version 4.x or higher recommended.</li>
+<li><strong>Required Foundry VTT:</strong> Version 10 or higher recommended.</li>
+<li><strong>Potential Conflicts:</strong> This module significantly modifies the Inventory and Crafting tabs of the <code>CharacterSheetPF2e</code>. Conflicts <em>might</em> arise with other modules that heavily alter these same tabs or intercept the same button actions. Generally compatible with modules that add new tabs or modify other parts of the sheet.</li>
+</ul>
+<h2 id="key-differences--considerations">Key Differences &amp; Considerations</h2>
+<ul>
+<li><strong>Deceptive Identification:</strong> The critical failure result for Identification is a custom rule specific to this module and can be surprising or confusing if players aren't aware of the possibility. GMs should decide if this mechanic fits their game.</li>
+<li><strong>Material Consumption:</strong> The rules for how much material is consumed on different crafting outcomes (especially the 50% chance on Crit Success/Failure) are specific to this module.</li>
+<li><strong>No Batch Crafting Input:</strong> The module removes the default quantity input for crafting formulas. The number of items crafted is determined by the value of materials provided relative to the item cost and the degree of success.</li>
+<li><strong>Feat Requirements:</strong> Crafting magical or alchemical items strictly requires the corresponding feat if this module is active.</li>
+</ul>
+<h2 id="license">License</h2>
+<!-- Replace with your chosen license -->
+<p>This project is licensed under the MIT License - see the <a href="LICENSE.md">LICENSE.md</a> file for details.</p>
+<h2 id="acknowledgements">Acknowledgements</h2>
+<ul>
+<li>Paizo Inc. for the Pathfinder Roleplaying Game and Pathfinder 2e system.</li>
+<li>The Foundry VTT team.</li>
+<li>The developers of the Foundry VTT Pathfinder 2e System implementation.</li>
+</ul>
+
+</body>
+</html>

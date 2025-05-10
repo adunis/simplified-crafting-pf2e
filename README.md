@@ -130,7 +130,7 @@ This module aims to streamline certain aspects of item interaction in PF2e campa
 ## License
 
 <!-- Replace with your chosen license -->
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details (if you add one).
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
 ## Acknowledgements
 
