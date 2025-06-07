@@ -6,18 +6,15 @@ export class SheetIntegrationHandler {
         identificationHandler,
         reverseEngineeringHandler,
         craftingHandler,
-        runeEtchingHandler, // Added runeEtchingHandler
+        runeEtchingHandler, 
         utils
     ) {
-        // console.log(`${MODULE_ID} | SheetIntegrationHandler constructor: Received identificationHandler:`, identificationHandler);
         this.identificationHandler = identificationHandler;
         this.reverseEngineeringHandler = reverseEngineeringHandler;
         this.craftingHandler = craftingHandler;
-        this.runeEtchingHandler = runeEtchingHandler; // Store the new handler
+        this.runeEtchingHandler = runeEtchingHandler; 
         this.utils = utils;
-        this.craftingFeatSlugs = DEFAULT_CRAFTING_FEAT_SLUGS; // Can be made a setting if desired
-        // console.log(`${MODULE_ID} | SheetIntegrationHandler constructor: this.identificationHandler is now:`, this.identificationHandler);
-        console.log(`${MODULE_ID} | SheetIntegrationHandler constructed.`);
+        this.craftingFeatSlugs = DEFAULT_CRAFTING_FEAT_SLUGS; 
     }
 
     onRenderCharacterSheet = async (sheetInstance, htmlJq) => {
@@ -27,7 +24,6 @@ export class SheetIntegrationHandler {
         }
 
         if (!this.utils || !this.utils.targetItemCache) {
-            console.error(`${MODULE_ID} | SheetIntegrationHandler.onRenderCharacterSheet: this.utils or this.utils.targetItemCache is undefined!`);
             return;
         }
 
@@ -37,7 +33,6 @@ export class SheetIntegrationHandler {
             this._modifyInventoryTabUI(htmlJq, actor);
             await this._modifyCraftingTabUI(htmlJq, actor);
         } catch (error) {
-            console.error(`${MODULE_ID} | Error in onRenderCharacterSheet processing: `, error);
         }
     };
 
@@ -51,74 +46,37 @@ export class SheetIntegrationHandler {
             if (insertPoint.length > 0) {
                 controlsContainer = $('<div class="inventory-controls" style="display: flex; justify-content: flex-end; gap: 5px; margin-bottom: 5px; flex-wrap: wrap;"></div>').insertBefore(insertPoint);
             } else {
-                console.warn(`${MODULE_ID} | Could not find a place to insert inventory controls.`);
                 return;
             }
         }
         
         this._addIdentifyButton(controlsContainer, actor);
-        this._addEtchRuneButton(controlsContainer, actor); // Add Etch Rune button to inventory controls
-        controlsContainer.find(".reverse-engineer-button").remove(); // Should be on crafting tab
+        controlsContainer.find(".reverse-engineer-button").remove(); 
     };
 
     _addIdentifyButton = (controlsContainer, actor) => {
-        // console.log(`${MODULE_ID} | _addIdentifyButton: Called for actor ${actor.name}. Controls found:`, controlsContainer.length > 0);
         if (controlsContainer.find(".identify-magic-items-button").length === 0) {
-            const buttonHtml = `<button type="button" class="identify-magic-items-button" data-tooltip-content="Identify unidentified items."><i class="fas fa-search-plus"></i> Identify Magic Items</button>`;
+            const buttonHtml = `<button type="button" class="identify-magic-items-button" data-tooltip-content="Identify unidentified items."><i class="fas fa-search-plus"></i> Identify Items</button>`;
             controlsContainer.prepend(buttonHtml);
-            // console.log(`${MODULE_ID} | _addIdentifyButton: Identify button prepended.`);
         }
 
         controlsContainer
             .off("click.identifyMagic", ".identify-magic-items-button")
             .on("click.identifyMagic", ".identify-magic-items-button", (event) => {
-                // console.log(`${MODULE_ID} | Identify Magic Items button CLICKED!`);
                 event.preventDefault();
-                // console.log(`${MODULE_ID} | CLICK: this.identificationHandler IS:`, this.identificationHandler);
                 if (!this.identificationHandler) {
-                    console.error(`${MODULE_ID} | _addIdentifyButton CLICK: this.identificationHandler is undefined.`);
                     ui.notifications.error("Identify Handler not ready."); return;
                 }
                 if (typeof this.identificationHandler.runIdentifyMagicProcess !== "function") {
-                    console.error(`${MODULE_ID} | _addIdentifyButton CLICK: runIdentifyMagicProcess is NOT a function on identificationHandler!`);
                     ui.notifications.error("Identify Handler method missing."); return;
                 }
                 try {
-                    // console.log(`${MODULE_ID} | _addIdentifyButton CLICK: PRE-CALL runIdentifyMagicProcess for actor ${actor.name}`);
                     this.identificationHandler.runIdentifyMagicProcess(actor);
-                    // console.log(`${MODULE_ID} | _addIdentifyButton CLICK: POST-CALL runIdentifyMagicProcess`);
                 } catch (err) {
-                    console.error(`${MODULE_ID} | Failed to run Identify Magic from button click:`, err);
                     ui.notifications.error("Failed to run Identify Magic. Check console (F12).");
                 }
             });
-        // console.log(`${MODULE_ID} | _addIdentifyButton: Click handler attached/re-attached.`);
     };
-
-    _addEtchRuneButton = (controlsContainer, actor) => {
-        // if (controlsContainer.find(".etch-rune-button").length === 0) {
-        //     const buttonHtml = `<button type="button" class="etch-rune-button" data-tooltip-content="Etch runes onto equipment."><i class="fas fa-magic"></i> Etch Rune</button>`;
-        //     // Decide where to place it relative to other buttons. Appending is fine for now.
-        //     controlsContainer.append(buttonHtml); 
-        // }
-
-        // controlsContainer
-        //     .off("click.etchRune", ".etch-rune-button")
-        //     .on("click.etchRune", ".etch-rune-button", (event) => {
-        //         event.preventDefault();
-        //         if (!this.runeEtchingHandler) {
-        //             console.error(`${MODULE_ID} | _addEtchRuneButton CLICK: this.runeEtchingHandler is undefined.`);
-        //             ui.notifications.error("Rune Etching Handler not ready."); return;
-        //         }
-        //         try {
-        //             this.runeEtchingHandler.startRuneEtchingProcess(actor);
-        //         } catch (err) {
-        //             console.error(`${MODULE_ID} | Failed to run Etch Rune process from button click:`, err);
-        //             ui.notifications.error("Failed to start Etch Rune process. Check console (F12).");
-        //         }
-        //     });
-    };
-
 
     _addReverseEngineerButton = (controlsContainer, actor) => {
         if (controlsContainer.find(".reverse-engineer-button").length > 0) return;
@@ -129,13 +87,11 @@ export class SheetIntegrationHandler {
             .on("click.reverseEngineer", ".reverse-engineer-button", (event) => {
                 event.preventDefault();
                 if (!this.reverseEngineeringHandler) {
-                    console.error(`${MODULE_ID} | _addReverseEngineerButton: this.reverseEngineeringHandler is undefined.`);
                     ui.notifications.error("Reverse Engineer Handler not ready."); return;
                 }
                 try {
                     this.reverseEngineeringHandler.handleReverseEngineering(actor);
                 } catch (err) {
-                    console.error(`${MODULE_ID} | Reverse Engineering Error:`, err);
                     ui.notifications.error("Reverse Engineering Error. Check console (F12).");
                 }
             });
@@ -145,7 +101,7 @@ export class SheetIntegrationHandler {
         const craftTab = htmlJq.find(".tab.crafting");
         if (craftTab.length === 0) return;
 
-        try { // Add Relevant Crafting Feats Section
+        try { 
             const allActorFeats = actor.itemTypes.feat;
             const relevantFeats = allActorFeats.filter(feat => this.craftingFeatSlugs.has(feat.slug))
                 .filter((feat, index, self) => index === self.findIndex(f => f.slug === feat.slug))
@@ -157,7 +113,7 @@ export class SheetIntegrationHandler {
             const featsSectionHtml = `<div class="relevant-crafting-feats" style="border:1px solid var(--color-border-light-tertiary);border-radius:3px;padding:8px 12px;margin-bottom:10px;background-color:rgba(0,0,0,0.02);"><h3 style="margin:0 0 5px 0;padding-bottom:3px;border-bottom:1px solid var(--color-border-light-divider);font-size:1.1em;font-weight:bold;color:var(--color-text-dark-primary);"><i class="fas fa-star" style="margin-right:5px;color:var(--color-text-dark-secondary);"></i>Crafting Feats</h3><ul style="list-style:none;margin:0;padding:0;font-size:0.95em;">${featListHtml}</ul></div>`;
             craftTab.find(".relevant-crafting-feats").remove();
             craftTab.prepend(featsSectionHtml);
-        } catch (featError) { console.error(`${MODULE_ID} | Error displaying crafting feats:`, featError); }
+        } catch (featError) { }
 
         const formulasHeader = craftTab.find(".known-formulas header");
         if (formulasHeader.length > 0) {
@@ -201,13 +157,11 @@ export class SheetIntegrationHandler {
                     craftButton.on("click.customCrafting", (event) => {
                         event.preventDefault(); event.stopPropagation();
                         this.handleCustomCraftingIntercept(actor, event).catch(error => {
-                            console.error(`${MODULE_ID} | Error during crafting initiation:`, error);
                             ui.notifications.error("An error occurred during crafting initiation. Check console (F12).");
                         });
                     });
                 }
             } catch (err) {
-                console.error(`${MODULE_ID} | Error processing formula ${formulaUuid}:`, err);
                 craftButton.prop("disabled", true).attr("title", "Error processing formula details.");
                 const errorIconHtml = `<span class="crafting-feat-warning" title="Error: ${err.message}" style="color:darkorange;margin-left:5px;cursor:help;"><i class="fas fa-bug"></i></span>`;
                 $li.find(".item-name h4, .item-name .action-name").first().append(errorIconHtml);
@@ -218,7 +172,6 @@ export class SheetIntegrationHandler {
 
     handleCustomCraftingIntercept = async (actor, event) => {
         if (!this.utils || !this.craftingHandler) {
-            console.error(`${MODULE_ID} | handleCustomCraftingIntercept: Missing utils or craftingHandler.`);
             ui.notifications.error("Crafting system components not ready."); return;
         }
         let formulaUuid = null, formulaDCFromSheet = null;
